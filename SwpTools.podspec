@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "swp-song" => "396587868@qq.com" }
   s.source                = { :git => "https://github.com/swp-song/SwpTools.git", :tag => s.version }
-  s.source_files          = "SwpTools/*.{h,m}"
+  s.source_files          = "SwpTools/*.{h}"
   s.requires_arc          = true
   #s.vendored_libraries    = "SwpTools/*.a"
   s.framework             = "UIKit", "Foundation"
