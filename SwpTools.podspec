@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source                = { :git => "https://github.com/swp-song/SwpTools.git", :tag => s.version }
   s.source_files          = "SwpTools/Header"
   s.requires_arc          = true
-  #s.vendored_libraries    = "SwpTools/*.a"
+  s.vendored_libraries    = "SwpTools/Lib"
   s.framework             = "UIKit", "Foundation"
 
 end
