@@ -17,7 +17,9 @@ SwpTools 文件夹 导入 项目 中
 #import "SwpTools"	
 			
 // 消除Block 循环引用
-#import "SwpWeakifyHeader"		
+#import "SwpWeakifyHeader"	
+
+// 新增打印宏头文件	
 
 ```
 ---
@@ -37,7 +39,9 @@ pod 'SwpTools'
 #import <SwpTools/SwpTools.h>		     
 
 //消除Block 循环引用
-#import <SwpTools/SwpWeakifyHeader.h>    
+#import <SwpTools/SwpWeakifyHeader.h>
+
+// 新增打印宏头文件
 
 ```
 
