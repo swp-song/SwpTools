@@ -19,7 +19,11 @@ SwpTools 文件夹 导入 项目 中
 // 消除Block 循环引用
 #import "SwpWeakifyHeader"	
 
-// 新增打印宏头文件	
+// 新增打印宏
+#import "SwpLog.h"
+
+// 新增 坐标 高德 百度 坐标 互转
+#import "SwpCoordinateTransform.h"
 
 ```
 ---
@@ -42,6 +46,11 @@ pod 'SwpTools'
 #import <SwpTools/SwpWeakifyHeader.h>
 
 // 新增打印宏头文件
+#import <SwpTools/SwpLog.h>
+
+// 新增 坐标 高德 百度 坐标 互转
+#import <SwpTools/SwpCoordinateTransform.h>
+
 
 ```
 
