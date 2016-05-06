@@ -37,8 +37,8 @@
     // 126.639577, 45.767864  百度 哈尔滨 火车站 坐标 ( 转换之前 )
     // amap 转成 高德 坐标
     SwpCoordinate2D amap  = [SwpCoordinateTransform swpCoordinateTransformBaiDuFromAMAP:45.767864 longitude:126.639577];
-    NSLog(@"%f,%f", baidu.longitude, baidu.latitude);
-    NSLog(@"%f,%f", amap.longitude, amap.latitude);
+    NSLog(@"百度坐标: %f,%f", baidu.longitude, baidu.latitude);
+    NSLog(@"高德坐标: %f,%f", amap.longitude, amap.latitude);
     
 }
 
