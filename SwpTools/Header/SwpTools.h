@@ -376,6 +376,33 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)swpToolCheckNavigationControllerExistenceController:(UINavigationController *)navigationController checkController:(Class)checkController checkResult:(void(^)(id obj, UINavigationController *navigationController, BOOL * _Nonnull stop))checkResult;
 
+
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpToolValidationClassTypeWithObject:validationClass:   ( 验证 2个 类 是否 是同一个类 )
+ *
+ *  @param  object
+ *
+ *  @param  validationClass
+ *
+ *  @return BOOL
+ */
++ (BOOL)swpToolValidationClassTypeWithObject:(NSObject *)object validationClass:(Class)validationClass;
+
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpToolValidationClassTypeWithDataSource:validationClass:   ( 验证 2个 类 是否 是同一个类 )
+ *
+ *  @param  objects
+ *
+ *  @param  validationClass
+ *
+ *  @return BOOL
+ */
++ (BOOL)swpToolValidationClassTypeWithDataSource:(NSArray<NSObject *> *)objects validationClass:(Class)validationClass;
+
 @end
 
 NS_ASSUME_NONNULL_END
