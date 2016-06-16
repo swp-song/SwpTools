@@ -131,7 +131,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param  timer
  */
-+ (void)swpToolSetButtonTimer:(UIButton *)button andTime:(int)time;
++ (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)time;
 
 #pragma mark - Jump ViewController Method
 /*!
