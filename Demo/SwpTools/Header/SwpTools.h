@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Get System Version & App Version Methods
 
 /*!
- *  @author swp_song, 2015-12-28 14:43:54
+ *  @author swp_song
  *
  *  @brief  swpToolCheckSystemVersion   ( 判断应用运行在什么系统版本上 )
  *
@@ -56,36 +56,36 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  *  @author swp_song
  *
- *  @brief  swpToolSettingTableViewAllCellWire:tableViewCell:  ( 设置 Cell 的分割线 )
+ *  @brief  swpToolSetTableViewAllCellWire:setTableViewCell:  ( 设置 Cell 的分割线 )
  *
  *  @param  tableView
  *
  *  @param  cell
  */
-+ (void)swpToolSettingTableViewAllCellWire:(UITableView *)tableView tableViewCell:(UITableViewCell *)cell;
++ (void)swpToolSetTableViewAllCellWire:(UITableView *)tableView setTableViewCell:(UITableViewCell *)cell;
 
 #pragma mark - WebView Load Servers URL Method
 /*!
  *  @author swp_song
  *
- *  @brief  swpToolWebViewLoadServersURL:serversURLString    ( WebView 加载 服务器端 URL )
+ *  @brief  swpToolWebViewLoadServersURL:setServersURLString:    ( WebView 加载 服务器端 URL )
  *
  *  @param  webView
  *
  *  @param  URLString
  */
-+ (void)swpToolWebViewLoadServersURL:(UIWebView *)webView serversURLString:(NSString *)URLString;
++ (void)swpToolWebViewLoadServersURL:(UIWebView *)webView setServersURLString:(NSString *)URLString;
 
 /*!
  *  @author swp_song
  *
- *  @brief  swpToolWKWebViewLoadServersURL:serversURLString  ( WKWebView 加载 服务器端 URL )
+ *  @brief  swpToolWKWebViewLoadServersURL:setServersURLString: ( WKWebView 加载 服务器端 URL )
  *
  *  @param  wkWebView
  *
  *  @param  URLString
  */
-+ (void)swpToolWKWebViewLoadServersURL:(WKWebView *)wkWebView serversURLString:(NSString *)URLString;
++ (void)swpToolWKWebViewLoadServersURL:(WKWebView *)wkWebView setServersURLString:(NSString *)URLString;
 
 
 #pragma mark - Call Phone & Message - Methods
@@ -121,18 +121,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)swpToolTrimString:(NSString *)string;
 
-
-#pragma mark - Setting Button Timer Method
+#pragma mark - Set Button Timer Method
 /*!
  *  @author swp_song
  *
- *  @brief  swpToolSettingButtonTimer:andTime:  在 button 设置倒计时 计时器
+ *  @brief  swpToolSettingButtonTimer:setTimer:  ( 在 button 设置倒计时 计时器 )
  *
  *  @param  button
  *
- *  @param  time
+ *  @param  timer
  */
-+ (void)swpToolSettingButtonTimer:(UIButton *)button andTime:(int)time;
++ (void)swpToolSetButtonTimer:(UIButton *)button andTime:(int)time;
 
 #pragma mark - Jump ViewController Method
 /*!
@@ -176,13 +175,13 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param  fontColor
  */
-+ (void)swpToolSettingLabelProperty:(UILabel *)label showBorderWidth:(BOOL)isShow fontSize:(CGFloat)fontSize fontColor:(UIColor *)fontColor;
++ (void)swpToolSetLabelProperty:(UILabel *)label showBorderWidth:(BOOL)isShow fontSize:(CGFloat)fontSize fontColor:(UIColor *)fontColor;
 
 #pragma mark - Setting View UITapGestureRecognizer Method
 /*!
- *  @author swp_song, 2015-12-28 15:18:35
+ *  @author swp_song
  *
- *  @brief  swpToolSettingTapGestureRecognizer:viewTag:addTarget:action:cancelsTouchesInView  ( Setting View UITapGestureRecognizer <绑定 一个 点击事件 给一个 view> )
+ *  @brief  swpToolSetTapGestureRecognizer:setViewTag:setClickCount:setTarget:setAction:setCancelsTouchesInView:    ( 绑定 一个 点击事件 给一个 view )
  *
  *  @param  view
  *
@@ -198,7 +197,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return UITapGestureRecognizer
  */
-+ (UITapGestureRecognizer *)swpToolSettingTapGestureRecognizer:(UIView *)view viewTag:(NSInteger)tag clickCount:(NSInteger)count addTarget:(id)target action:(SEL)action cancelsTouchesInView:(BOOL)cancels;
++ (UITapGestureRecognizer *)swpToolSetTapGestureRecognizer:(UIView *)view setViewTag:(NSInteger)tag setClickCount:(NSInteger)count setTarget:(nullable id)target setAction:(nullable SEL)action setCancelsTouchesInView:(BOOL)cancels;
+
 
 #pragma mark - Time Dispose Method
 /*!
