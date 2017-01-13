@@ -13,7 +13,7 @@
 		2DBD75691E287B6900DD7333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBD75671E287B6900DD7333 /* Main.storyboard */; };
 		2DBD756B1E287B6900DD7333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBD756A1E287B6900DD7333 /* Assets.xcassets */; };
 		2DBD756E1E287B6900DD7333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBD756C1E287B6900DD7333 /* LaunchScreen.storyboard */; };
-		2DBD75881E287BAA00DD7333 /* libSwpTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBD75871E287BAA00DD7333 /* libSwpTools.a */; };
+		2DBD75921E28983F00DD7333 /* libSwpTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBD75911E28983F00DD7333 /* libSwpTools.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +27,12 @@
 		2DBD756A1E287B6900DD7333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DBD756D1E287B6900DD7333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DBD756F1E287B6900DD7333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DBD75811E287BAA00DD7333 /* SwpCoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoordinateTransform.h; sourceTree = "<group>"; };
-		2DBD75821E287BAA00DD7333 /* SwpGetSystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpGetSystemInformation.h; sourceTree = "<group>"; };
-		2DBD75831E287BAA00DD7333 /* SwpLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpLog.h; sourceTree = "<group>"; };
-		2DBD75841E287BAA00DD7333 /* SwpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpTools.h; sourceTree = "<group>"; };
-		2DBD75851E287BAA00DD7333 /* SwpWeakifyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpWeakifyHeader.h; sourceTree = "<group>"; };
-		2DBD75871E287BAA00DD7333 /* libSwpTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSwpTools.a; sourceTree = "<group>"; };
+		2DBD758B1E28983F00DD7333 /* SwpCoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoordinateTransform.h; sourceTree = "<group>"; };
+		2DBD758C1E28983F00DD7333 /* SwpGetSystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpGetSystemInformation.h; sourceTree = "<group>"; };
+		2DBD758D1E28983F00DD7333 /* SwpLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpLog.h; sourceTree = "<group>"; };
+		2DBD758E1E28983F00DD7333 /* SwpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpTools.h; sourceTree = "<group>"; };
+		2DBD758F1E28983F00DD7333 /* SwpWeakifyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpWeakifyHeader.h; sourceTree = "<group>"; };
+		2DBD75911E28983F00DD7333 /* libSwpTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSwpTools.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DBD75881E287BAA00DD7333 /* libSwpTools.a in Frameworks */,
+				2DBD75921E28983F00DD7333 /* libSwpTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		2DBD755D1E287B6900DD7333 /* SwpToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2DBD757F1E287BAA00DD7333 /* SwpTools */,
+				2DBD75891E28983F00DD7333 /* SwpTools */,
 				2DBD75611E287B6900DD7333 /* AppDelegate.h */,
 				2DBD75621E287B6900DD7333 /* AppDelegate.m */,
 				2DBD75641E287B6900DD7333 /* ViewController.h */,
@@ -88,31 +88,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2DBD757F1E287BAA00DD7333 /* SwpTools */ = {
+		2DBD75891E28983F00DD7333 /* SwpTools */ = {
 			isa = PBXGroup;
 			children = (
-				2DBD75801E287BAA00DD7333 /* Header */,
-				2DBD75861E287BAA00DD7333 /* Library */,
+				2DBD758A1E28983F00DD7333 /* Header */,
+				2DBD75901E28983F00DD7333 /* Library */,
 			);
 			path = SwpTools;
 			sourceTree = SOURCE_ROOT;
 		};
-		2DBD75801E287BAA00DD7333 /* Header */ = {
+		2DBD758A1E28983F00DD7333 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				2DBD75811E287BAA00DD7333 /* SwpCoordinateTransform.h */,
-				2DBD75821E287BAA00DD7333 /* SwpGetSystemInformation.h */,
-				2DBD75831E287BAA00DD7333 /* SwpLog.h */,
-				2DBD75841E287BAA00DD7333 /* SwpTools.h */,
-				2DBD75851E287BAA00DD7333 /* SwpWeakifyHeader.h */,
+				2DBD758B1E28983F00DD7333 /* SwpCoordinateTransform.h */,
+				2DBD758C1E28983F00DD7333 /* SwpGetSystemInformation.h */,
+				2DBD758D1E28983F00DD7333 /* SwpLog.h */,
+				2DBD758E1E28983F00DD7333 /* SwpTools.h */,
+				2DBD758F1E28983F00DD7333 /* SwpWeakifyHeader.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
 		};
-		2DBD75861E287BAA00DD7333 /* Library */ = {
+		2DBD75901E28983F00DD7333 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				2DBD75871E287BAA00DD7333 /* libSwpTools.a */,
+				2DBD75911E28983F00DD7333 /* libSwpTools.a */,
 			);
 			path = Library;
 			sourceTree = "<group>";
