@@ -1,7 +1,7 @@
 # SwpTools
 
 
-#####尝试静态库打 封装一些 常用的工具方法 
+#####尝试静态库打 封装一些 常用的工具方法
 ---
 
 #####导入：
@@ -10,14 +10,11 @@
 
 SwpTools 文件夹 导入 项目 中
 
-// 获取 手机IP
-#import "SwpGetIp"				
-
 // 常用 工具类
-#import "SwpTools"	
-			
+#import "SwpTools"
+
 // 消除Block 循环引用
-#import "SwpWeakifyHeader"	
+#import "SwpWeakifyHeader"
 
 // 新增打印宏
 #import "SwpLog.h"
@@ -51,6 +48,26 @@ pod 'SwpTools'
 // 新增 坐标 高德 百度 坐标 互转
 #import <SwpTools/SwpCoordinateTransform.h>
 
+// 新增 获取手机系统信息
+#import <SwpTools/SwpGetSystemInformation.h>
 
 ```
 
+---
+
+##### 2.0.0 更新:
+```Objective-C
+
+  1. 2017-01-13 11:20:46
+
+  2. 更新 SwpGetSystemInformation.h 类文件
+
+```
+
+---
+
+##### 备注：
+```
+持续更新..
+```
+---

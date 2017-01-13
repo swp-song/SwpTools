@@ -1,17 +1,16 @@
 //
 //  ViewController.m
-//  Demo
+//  SwpToolsDemo
 //
-//  Created by swp_song on 16/4/15.
-//  Copyright © 2016年 swp_song. All rights reserved.
+//  Created by swp_song on 2017/1/13.
+//  Copyright © 2017年 swp_song. All rights reserved.
 //
 
 #import "ViewController.h"
 
-
 #import "SwpLog.h"
 #import "SwpTools.h"
-#import "SwpGetIp.h"
+#import "SwpGetSystemInformation.h"
 #import "SwpCoordinateTransform.h"
 
 @interface ViewController ()
@@ -25,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     NSLog(@"%@", NSStringFromCGSize([SwpTools swpToolScreenSize]));
-    NSLog(@"%@", [SwpGetIp swpGetIphoneIpAddress]);
+    NSLog(@"%@", [SwpGetSystemInformation swpGetIphoneIpAddress]);
     
     // 坐标拾取稀土 可以 根据 坐标反查
     // http://lbs.amap.com/console/show/picker 高德
@@ -39,12 +38,13 @@
     SwpCoordinate2D amap  = [SwpCoordinateTransform swpCoordinateTransformBaiDuFromAMAP:45.767864 longitude:126.639577];
     NSLog(@"百度坐标: %f,%f", baidu.longitude, baidu.latitude);
     NSLog(@"高德坐标: %f,%f", amap.longitude, amap.latitude);
-    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
