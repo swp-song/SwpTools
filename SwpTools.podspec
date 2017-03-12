@@ -2,10 +2,11 @@
 
 Pod::Spec.new do |s|
 
+
   s.name                  = "SwpTools"
-  s.version               = "2.2.3"
-  s.ios.deployment_target = '7.0'
+  s.version               = "2.2.4"
   s.summary               = " 一些常用的工具方法 "
+  s.ios.deployment_target = "7.0"
   s.homepage              = "https://github.com/swp-song/SwpTools"
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "swp-song" => "396587868@qq.com" }
