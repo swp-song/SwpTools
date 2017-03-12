@@ -405,7 +405,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)swpToolCheckNavigationControllerExistenceController:(UINavigationController *)navigationController checkController:(Class)checkController checkResult:(void(^)(id obj, UINavigationController *navigationController, BOOL * _Nonnull stop))checkResult;
 
-
 /**!
  *  @ author swp_song
  *
@@ -431,6 +430,18 @@ NS_ASSUME_NONNULL_BEGIN
  *  @ return BOOL
  */
 + (BOOL)swpToolValidationClassTypeWithDataSource:(NSArray<NSObject *> *)objects validationClass:(Class)validationClass;
+
+/**!
+ *  @ author swp_song
+ *
+ *  @ brief  swpToolViewBottomDrawLines:linesColor: ( 在 view 底部画线 在 view drawRect 这个方法中调用, 一般适用于 绘制 cell 分割线)
+ *
+ *  @ param  frame
+ *
+ *  @ param  color
+ */
++ (void)swpToolViewBottomDrawLines:(CGRect)frame linesColor:(UIColor *)color;
+
 
 @end
 
