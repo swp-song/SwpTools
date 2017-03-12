@@ -2,7 +2,7 @@
 //  ViewController.m
 //  SwpToolsDemo
 //
-//  Created by swp_song on 2017/1/13.
+//  Created by swp_song on 2017/3/12.
 //  Copyright © 2017年 swp_song. All rights reserved.
 //
 
@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     NSLog(@"%@", NSStringFromCGSize([SwpTools swpToolScreenSize]));
     NSLog(@"%@", [SwpGetSystemInformation swpGetIphoneIpAddress]);
     

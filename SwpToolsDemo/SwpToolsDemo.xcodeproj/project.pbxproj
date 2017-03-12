@@ -7,121 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DE2A92C1E7526C400E5BD37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9211E7526C400E5BD37 /* AppDelegate.m */; };
-		2DE2A92D1E7526C400E5BD37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9221E7526C400E5BD37 /* Assets.xcassets */; };
-		2DE2A92E1E7526C400E5BD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9231E7526C400E5BD37 /* LaunchScreen.storyboard */; };
-		2DE2A92F1E7526C400E5BD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9251E7526C400E5BD37 /* Main.storyboard */; };
-		2DE2A9301E7526C400E5BD37 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9271E7526C400E5BD37 /* Info.plist */; };
-		2DE2A9311E7526C400E5BD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9281E7526C400E5BD37 /* main.m */; };
-		2DE2A9321E7526C400E5BD37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A92A1E7526C400E5BD37 /* ViewController.m */; };
-		2DE2A93D1E7526D300E5BD37 /* libSwpTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE2A93C1E7526D300E5BD37 /* libSwpTools.a */; };
+		2DE2A9591E752EA900E5BD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9581E752EA900E5BD37 /* main.m */; };
+		2DE2A95C1E752EA900E5BD37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A95B1E752EA900E5BD37 /* AppDelegate.m */; };
+		2DE2A95F1E752EA900E5BD37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A95E1E752EA900E5BD37 /* ViewController.m */; };
+		2DE2A9621E752EA900E5BD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9601E752EA900E5BD37 /* Main.storyboard */; };
+		2DE2A9641E752EA900E5BD37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9631E752EA900E5BD37 /* Assets.xcassets */; };
+		2DE2A9671E752EA900E5BD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9651E752EA900E5BD37 /* LaunchScreen.storyboard */; };
+		2DE2A9781E752EC900E5BD37 /* SwpCoordinateTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9711E752EC900E5BD37 /* SwpCoordinateTransform.m */; };
+		2DE2A9791E752EC900E5BD37 /* SwpGetSystemInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9731E752EC900E5BD37 /* SwpGetSystemInformation.m */; };
+		2DE2A97A1E752EC900E5BD37 /* SwpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9761E752EC900E5BD37 /* SwpTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DBD755B1E287B6900DD7333 /* SwpToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DE2A9201E7526C400E5BD37 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2DE2A9211E7526C400E5BD37 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DE2A9221E7526C400E5BD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DE2A9241E7526C400E5BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2DE2A9261E7526C400E5BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2DE2A9271E7526C400E5BD37 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DE2A9281E7526C400E5BD37 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DE2A9291E7526C400E5BD37 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2DE2A92A1E7526C400E5BD37 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2DE2A9351E7526D300E5BD37 /* SwpCoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoordinateTransform.h; sourceTree = "<group>"; };
-		2DE2A9361E7526D300E5BD37 /* SwpGetIp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpGetIp.h; sourceTree = "<group>"; };
-		2DE2A9371E7526D300E5BD37 /* SwpGetSystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpGetSystemInformation.h; sourceTree = "<group>"; };
-		2DE2A9381E7526D300E5BD37 /* SwpLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpLog.h; sourceTree = "<group>"; };
-		2DE2A9391E7526D300E5BD37 /* SwpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpTools.h; sourceTree = "<group>"; };
-		2DE2A93A1E7526D300E5BD37 /* SwpWeakifyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpWeakifyHeader.h; sourceTree = "<group>"; };
-		2DE2A93C1E7526D300E5BD37 /* libSwpTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSwpTools.a; sourceTree = "<group>"; };
+		2DE2A9541E752EA900E5BD37 /* SwpToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE2A9581E752EA900E5BD37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DE2A95A1E752EA900E5BD37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DE2A95B1E752EA900E5BD37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DE2A95D1E752EA900E5BD37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DE2A95E1E752EA900E5BD37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DE2A9611E752EA900E5BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DE2A9631E752EA900E5BD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DE2A9661E752EA900E5BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DE2A9681E752EA900E5BD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE2A9701E752EC900E5BD37 /* SwpCoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoordinateTransform.h; sourceTree = "<group>"; };
+		2DE2A9711E752EC900E5BD37 /* SwpCoordinateTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCoordinateTransform.m; sourceTree = "<group>"; };
+		2DE2A9721E752EC900E5BD37 /* SwpGetSystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpGetSystemInformation.h; sourceTree = "<group>"; };
+		2DE2A9731E752EC900E5BD37 /* SwpGetSystemInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpGetSystemInformation.m; sourceTree = "<group>"; };
+		2DE2A9741E752EC900E5BD37 /* SwpLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpLog.h; sourceTree = "<group>"; };
+		2DE2A9751E752EC900E5BD37 /* SwpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpTools.h; sourceTree = "<group>"; };
+		2DE2A9761E752EC900E5BD37 /* SwpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpTools.m; sourceTree = "<group>"; };
+		2DE2A9771E752EC900E5BD37 /* SwpWeakifyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpWeakifyHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2DBD75581E287B6900DD7333 /* Frameworks */ = {
+		2DE2A9511E752EA900E5BD37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE2A93D1E7526D300E5BD37 /* libSwpTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DBD75521E287B6900DD7333 = {
+		2DE2A94B1E752EA900E5BD37 = {
 			isa = PBXGroup;
 			children = (
-				2DE2A91F1E7526C400E5BD37 /* SwpToolsDemo */,
-				2DBD755C1E287B6900DD7333 /* Products */,
+				2DE2A9561E752EA900E5BD37 /* SwpToolsDemo */,
+				2DE2A9551E752EA900E5BD37 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2DBD755C1E287B6900DD7333 /* Products */ = {
+		2DE2A9551E752EA900E5BD37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DBD755B1E287B6900DD7333 /* SwpToolsDemo.app */,
+				2DE2A9541E752EA900E5BD37 /* SwpToolsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2DE2A91F1E7526C400E5BD37 /* SwpToolsDemo */ = {
+		2DE2A9561E752EA900E5BD37 /* SwpToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2DE2A9331E7526D300E5BD37 /* SwpTools */,
-				2DE2A9201E7526C400E5BD37 /* AppDelegate.h */,
-				2DE2A9211E7526C400E5BD37 /* AppDelegate.m */,
-				2DE2A9221E7526C400E5BD37 /* Assets.xcassets */,
-				2DE2A9231E7526C400E5BD37 /* LaunchScreen.storyboard */,
-				2DE2A9251E7526C400E5BD37 /* Main.storyboard */,
-				2DE2A9271E7526C400E5BD37 /* Info.plist */,
-				2DE2A9281E7526C400E5BD37 /* main.m */,
-				2DE2A9291E7526C400E5BD37 /* ViewController.h */,
-				2DE2A92A1E7526C400E5BD37 /* ViewController.m */,
+				2DE2A96E1E752EC900E5BD37 /* SwpTools */,
+				2DE2A95A1E752EA900E5BD37 /* AppDelegate.h */,
+				2DE2A95B1E752EA900E5BD37 /* AppDelegate.m */,
+				2DE2A95D1E752EA900E5BD37 /* ViewController.h */,
+				2DE2A95E1E752EA900E5BD37 /* ViewController.m */,
+				2DE2A9601E752EA900E5BD37 /* Main.storyboard */,
+				2DE2A9631E752EA900E5BD37 /* Assets.xcassets */,
+				2DE2A9651E752EA900E5BD37 /* LaunchScreen.storyboard */,
+				2DE2A9681E752EA900E5BD37 /* Info.plist */,
+				2DE2A9571E752EA900E5BD37 /* Supporting Files */,
 			);
 			path = SwpToolsDemo;
 			sourceTree = "<group>";
 		};
-		2DE2A9331E7526D300E5BD37 /* SwpTools */ = {
+		2DE2A9571E752EA900E5BD37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2DE2A9341E7526D300E5BD37 /* Header */,
-				2DE2A93B1E7526D300E5BD37 /* Library */,
+				2DE2A9581E752EA900E5BD37 /* main.m */,
 			);
-			path = SwpTools;
-			sourceTree = SOURCE_ROOT;
-		};
-		2DE2A9341E7526D300E5BD37 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				2DE2A9351E7526D300E5BD37 /* SwpCoordinateTransform.h */,
-				2DE2A9361E7526D300E5BD37 /* SwpGetIp.h */,
-				2DE2A9371E7526D300E5BD37 /* SwpGetSystemInformation.h */,
-				2DE2A9381E7526D300E5BD37 /* SwpLog.h */,
-				2DE2A9391E7526D300E5BD37 /* SwpTools.h */,
-				2DE2A93A1E7526D300E5BD37 /* SwpWeakifyHeader.h */,
-			);
-			path = Header;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2DE2A93B1E7526D300E5BD37 /* Library */ = {
+		2DE2A96E1E752EC900E5BD37 /* SwpTools */ = {
 			isa = PBXGroup;
 			children = (
-				2DE2A93C1E7526D300E5BD37 /* libSwpTools.a */,
+				2DE2A96F1E752EC900E5BD37 /* SwpTools */,
 			);
-			path = Library;
+			name = SwpTools;
+			path = ../../SwpTools;
+			sourceTree = "<group>";
+		};
+		2DE2A96F1E752EC900E5BD37 /* SwpTools */ = {
+			isa = PBXGroup;
+			children = (
+				2DE2A9701E752EC900E5BD37 /* SwpCoordinateTransform.h */,
+				2DE2A9711E752EC900E5BD37 /* SwpCoordinateTransform.m */,
+				2DE2A9721E752EC900E5BD37 /* SwpGetSystemInformation.h */,
+				2DE2A9731E752EC900E5BD37 /* SwpGetSystemInformation.m */,
+				2DE2A9741E752EC900E5BD37 /* SwpLog.h */,
+				2DE2A9751E752EC900E5BD37 /* SwpTools.h */,
+				2DE2A9761E752EC900E5BD37 /* SwpTools.m */,
+				2DE2A9771E752EC900E5BD37 /* SwpWeakifyHeader.h */,
+			);
+			path = SwpTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2DBD755A1E287B6900DD7333 /* SwpToolsDemo */ = {
+		2DE2A9531E752EA900E5BD37 /* SwpToolsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DBD75721E287B6900DD7333 /* Build configuration list for PBXNativeTarget "SwpToolsDemo" */;
+			buildConfigurationList = 2DE2A96B1E752EA900E5BD37 /* Build configuration list for PBXNativeTarget "SwpToolsDemo" */;
 			buildPhases = (
-				2DBD75571E287B6900DD7333 /* Sources */,
-				2DBD75581E287B6900DD7333 /* Frameworks */,
-				2DBD75591E287B6900DD7333 /* Resources */,
+				2DE2A9501E752EA900E5BD37 /* Sources */,
+				2DE2A9511E752EA900E5BD37 /* Frameworks */,
+				2DE2A9521E752EA900E5BD37 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,25 +132,25 @@
 			);
 			name = SwpToolsDemo;
 			productName = SwpToolsDemo;
-			productReference = 2DBD755B1E287B6900DD7333 /* SwpToolsDemo.app */;
+			productReference = 2DE2A9541E752EA900E5BD37 /* SwpToolsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2DBD75531E287B6900DD7333 /* Project object */ = {
+		2DE2A94C1E752EA900E5BD37 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = swp_song;
 				TargetAttributes = {
-					2DBD755A1E287B6900DD7333 = {
+					2DE2A9531E752EA900E5BD37 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 2DBD75561E287B6900DD7333 /* Build configuration list for PBXProject "SwpToolsDemo" */;
+			buildConfigurationList = 2DE2A94F1E752EA900E5BD37 /* Build configuration list for PBXProject "SwpToolsDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,64 +158,66 @@
 				en,
 				Base,
 			);
-			mainGroup = 2DBD75521E287B6900DD7333;
-			productRefGroup = 2DBD755C1E287B6900DD7333 /* Products */;
+			mainGroup = 2DE2A94B1E752EA900E5BD37;
+			productRefGroup = 2DE2A9551E752EA900E5BD37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2DBD755A1E287B6900DD7333 /* SwpToolsDemo */,
+				2DE2A9531E752EA900E5BD37 /* SwpToolsDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2DBD75591E287B6900DD7333 /* Resources */ = {
+		2DE2A9521E752EA900E5BD37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE2A9301E7526C400E5BD37 /* Info.plist in Resources */,
-				2DE2A92F1E7526C400E5BD37 /* Main.storyboard in Resources */,
-				2DE2A92D1E7526C400E5BD37 /* Assets.xcassets in Resources */,
-				2DE2A92E1E7526C400E5BD37 /* LaunchScreen.storyboard in Resources */,
+				2DE2A9671E752EA900E5BD37 /* LaunchScreen.storyboard in Resources */,
+				2DE2A9641E752EA900E5BD37 /* Assets.xcassets in Resources */,
+				2DE2A9621E752EA900E5BD37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2DBD75571E287B6900DD7333 /* Sources */ = {
+		2DE2A9501E752EA900E5BD37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE2A9321E7526C400E5BD37 /* ViewController.m in Sources */,
-				2DE2A9311E7526C400E5BD37 /* main.m in Sources */,
-				2DE2A92C1E7526C400E5BD37 /* AppDelegate.m in Sources */,
+				2DE2A97A1E752EC900E5BD37 /* SwpTools.m in Sources */,
+				2DE2A95F1E752EA900E5BD37 /* ViewController.m in Sources */,
+				2DE2A9781E752EC900E5BD37 /* SwpCoordinateTransform.m in Sources */,
+				2DE2A95C1E752EA900E5BD37 /* AppDelegate.m in Sources */,
+				2DE2A9591E752EA900E5BD37 /* main.m in Sources */,
+				2DE2A9791E752EC900E5BD37 /* SwpGetSystemInformation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2DE2A9231E7526C400E5BD37 /* LaunchScreen.storyboard */ = {
+		2DE2A9601E752EA900E5BD37 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2DE2A9241E7526C400E5BD37 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		2DE2A9251E7526C400E5BD37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DE2A9261E7526C400E5BD37 /* Base */,
+				2DE2A9611E752EA900E5BD37 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DE2A9651E752EA900E5BD37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DE2A9661E752EA900E5BD37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2DBD75701E287B6900DD7333 /* Debug */ = {
+		2DE2A9691E752EA900E5BD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +264,7 @@
 			};
 			name = Debug;
 		};
-		2DBD75711E287B6900DD7333 /* Release */ = {
+		2DE2A96A1E752EA900E5BD37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,31 +305,27 @@
 			};
 			name = Release;
 		};
-		2DBD75731E287B6900DD7333 /* Debug */ = {
+		2DE2A96C1E752EA900E5BD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwpToolsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwpTools/Library",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "swp-song.SwpToolsDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2DBD75741E287B6900DD7333 /* Release */ = {
+		2DE2A96D1E752EA900E5BD37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwpToolsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwpTools/Library",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "swp-song.SwpToolsDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -333,25 +334,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DBD75561E287B6900DD7333 /* Build configuration list for PBXProject "SwpToolsDemo" */ = {
+		2DE2A94F1E752EA900E5BD37 /* Build configuration list for PBXProject "SwpToolsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DBD75701E287B6900DD7333 /* Debug */,
-				2DBD75711E287B6900DD7333 /* Release */,
+				2DE2A9691E752EA900E5BD37 /* Debug */,
+				2DE2A96A1E752EA900E5BD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DBD75721E287B6900DD7333 /* Build configuration list for PBXNativeTarget "SwpToolsDemo" */ = {
+		2DE2A96B1E752EA900E5BD37 /* Build configuration list for PBXNativeTarget "SwpToolsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DBD75731E287B6900DD7333 /* Debug */,
-				2DBD75741E287B6900DD7333 /* Release */,
+				2DE2A96C1E752EA900E5BD37 /* Debug */,
+				2DE2A96D1E752EA900E5BD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2DBD75531E287B6900DD7333 /* Project object */;
+	rootObject = 2DE2A94C1E752EA900E5BD37 /* Project object */;
 }
