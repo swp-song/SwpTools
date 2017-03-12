@@ -350,6 +350,7 @@
 				2DE2A96D1E752EA900E5BD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
