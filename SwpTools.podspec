@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwpTools"
-  s.version      = "2.2.8"
+  s.version      = "2.2.9"
   s.summary      = " 一些常用的工具方法 "
 
   # This description is used to generate tags and improve search results.
@@ -90,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "SwpTools", "SwpTools/Header/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "SwpTools/Header/**/*.h"
+  #s.public_header_files = "SwpTools/Header/**/*.h"
   s.vendored_libraries  = "SwpTools/Library/*.a"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
