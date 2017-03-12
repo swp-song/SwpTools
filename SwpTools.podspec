@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name                  = "SwpTools"
-  s.version               = "2.2.6"
+  s.version               = "2.2.7"
   s.summary               = " 一些常用的工具方法 "
   s.ios.deployment_target = "7.0"
   s.homepage              = "https://github.com/swp-song/SwpTools"

@@ -19,18 +19,18 @@
 1. 手动导入：
 
  	* SwpTools 文件夹 导入 项目 中
-	
+
 	* #import "SwpTools" 			// 常用 工具类
 
 
 2. CocoaPods 导入:
 
 	* pod search SwpTools
-	
+
 	* pod 'SwpTools'
 
 	* #import <SwpTools/SwpTools.h>	// 常用 工具类
-	
+
 
 ```
 **...更多工具请查看 Demo**
@@ -40,9 +40,9 @@
 ##### 版本记录
 
 ```
-1. 版本版本: 2.1.0
+1. 版本版本: 2.1.7
 
-2. 更新时间: 2017-03-12 13:58:47
+2. 更新时间: 2017-03-12 14:49:59
 
 3. 更新内容:
 	* + (void)swpToolViewBottomDrawLines:(CGRect)frame linesColor:(UIColor *)color; < view 底部 画线方法 适用于 cell 分割线, 详细备注请查看 Demo >
@@ -61,5 +61,3 @@
 **著作权归 ©swp_song, 如需转载请标明出处**
 
 -------
-
-
