@@ -37,6 +37,13 @@
     SwpCoordinate2D amap  = [SwpCoordinateTransform swpCoordinateTransformBaiDuFromAMAP:45.767864 longitude:126.639577];
     NSLog(@"百度坐标: %f,%f", baidu.longitude, baidu.latitude);
     NSLog(@"高德坐标: %f,%f", amap.longitude, amap.latitude);
+    
+    NSString *string = @"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈";
+    
+    NSLog(@"%f", [SwpTools swpToolCalculateRowHeight:string font:[UIFont systemFontOfSize:12] width:[SwpTools swpToolScreenWidth]]);
+    
+    NSLog(@"%f", [SwpTools swpTooCalculateRowWidth:string font:[UIFont systemFontOfSize:12] height:[SwpTools swpToolScreenHeight]]);
+    
 }
 
 

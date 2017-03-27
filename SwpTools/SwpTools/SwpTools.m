@@ -18,11 +18,11 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 #pragma mark - Get System Version & App Version Methods
 
 /**!
- *  @ author swp_song, 2015-12-28 14:43:54
+ *  @author swp_song, 2015-12-28 14:43:54
  *
- *  @ brief  swpToolCheckSystemVersion   ( 判断应用运行在什么系统版本上 )
+ *  @brief  swpToolCheckSystemVersion   ( 判断应用运行在什么系统版本上 )
  *
- *  @ return 返回系统版本 ：7.0     6.0     6.1等
+ *  @return 返回系统版本 ：7.0     6.0     6.1等
  */
 + (CGFloat)swpToolCheckSystemVersion {
     static dispatch_once_t onceToken;
@@ -34,11 +34,11 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolCheckAppVersion      ( 判断应用的版本号 )
+ *  @brief  swpToolCheckAppVersion  ( 判断应用的版本号 )
  *
- *  @ return 返回版本号
+ *  @return NSString    ( 返回版本号 )
  */
 + (NSString *)swpToolCheckAppVersion {
     static dispatch_once_t onceToken;
@@ -51,11 +51,11 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolGetAppVersion   ( 获取 系统 版本号 < 无需自己判断 > )
+ *  @brief  swpToolGetAppVersion   ( 获取 系统 版本号 < 无需自己判断 > )
  *
- *  @ return NSString
+ *  @return NSString
  */
 + (NSString *)swpToolGetAppVersion {
 #if DEBUG
@@ -67,22 +67,22 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolBundleVersion   ( 获取 系统 版本号 Production )
+ *  @brief  swpToolBundleVersion   ( 获取 系统 版本号 Production )
  *
- *  @ return NSString
+ *  @return NSString
  */
 + (NSString *)swpToolBundleVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolBundleShortVersionString   ( 获取 系统 版本号 Development )
+ *  @brief  swpToolBundleShortVersionString   ( 获取 系统 版本号 Development )
  *
- *  @ return NSString
+ *  @return NSString
  */
 + (NSString *)swpToolBundleShortVersionString {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
@@ -92,11 +92,11 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Hiddle TableView Excessed Cell & Setting TableView Cell Separate Wire - Methods
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolHiddleExcessedCellFromTableview:  ( 隐藏 Tableivew 中多余的 Cell )
+ *  @brief  swpToolHiddleExcessedCellFromTableview: ( 隐藏 Tableivew 中多余的 Cell )
  *
- *  @ param  tableview
+ *  @param  tableview   tableview
  */
 + (void)swpToolHiddleExcessedCellFromTableview:(UITableView *)tableview {
     UIView *view         = [[UIView alloc] initWithFrame:CGRectZero];
@@ -105,13 +105,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolSetTableViewAllCellWire:setTableViewCell:  ( 设置 Cell 的分割线 )
+ *  @brief  swpToolSetTableViewAllCellWire:setTableViewCell:  ( 设置 Cell 的分割线 )
  *
- *  @ param  tableView
+ *  @param  tableView   tableView
  *
- *  @ param  cell
+ *  @param  cell        cell
  */
 + (void)swpToolSetTableViewAllCellWire:(UITableView *)tableView setTableViewCell:(UITableViewCell *)cell {
     
@@ -133,26 +133,26 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - WebView Load Servers URL Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolWebViewLoadServersURL:setServersURLString:    ( WebView 加载 服务器端 URL )
+ *  @brief  swpToolWebViewLoadServersURL:setServersURLString:    ( WebView 加载 服务器端 URL )
  *
- *  @ param  webView
+ *  @param  webView     webView
  *
- *  @ param  URLString
+ *  @param  URLString   URLString
  */
 + (void)swpToolWebViewLoadServersURL:(UIWebView *)webView setServersURLString:(NSString *)URLString {
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:URLString]]];
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolWKWebViewLoadServersURL:setServersURLString: ( WKWebView 加载 服务器端 URL )
+ *  @brief  swpToolWKWebViewLoadServersURL:setServersURLString: ( WKWebView 加载 服务器端 URL )
  *
- *  @ param  wkWebView
+ *  @param  wkWebView   wkWebView
  *
- *  @ param  URLString
+ *  @param  URLString   URLString
  */
 + (void)swpToolWKWebViewLoadServersURL:(WKWebView *)wkWebView setServersURLString:(NSString *)URLString {
     [wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:URLString]]];
@@ -160,13 +160,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Call Phone & Message - Methods
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolCallPhone:superView:    ( 拨打 电话 )
+ *  @brief  swpToolCallPhone:superView:superView:   ( 拨打 电话 )
  *
- *  @ param  phoneNumber                    ( 电话 号码 )
+ *  @param  phoneNumber                             ( 电话 号码 )
  *
- *  @ param  view                           ( 当前 控制 view )
+ *  @param  view                                    ( 当前 控制 view )
  */
 + (void)swpToolCallPhone:(NSString *)phoneNumber superView:(UIView *)view {
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
@@ -177,11 +177,11 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolSendMessage: ( 快速跳转到 发送 信息页面 <只能给固定人发送信息, 不能编辑信息内容> )
+ *  @brief  swpToolSendMessage: ( 快速跳转到 发送 信息页面 <只能给固定人发送信息, 不能编辑信息内容> )
  *
- *  @ param  phoneNumber
+ *  @param  phoneNumber         ( 手机号 )
  */
 + (void)swpToolSendMessage:(NSString *)phoneNumber {
     NSString *sms = [NSString stringWithFormat:@"sms://%@", phoneNumber];
@@ -191,13 +191,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Trim String Front And Back Blanker Methods
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolTrimString:      ( 去除 字符串 前后 空格 )
+ *  @brief  swpToolTrimString:  ( 去除 字符串 前后 空格 )
  *
- *  @ param  string
+ *  @param  string              string
  *
- *  @ return NSString
+ *  @return NSString
  */
 + (NSString *)swpToolTrimString:(NSString *)string {
     return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
@@ -206,13 +206,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Set Button Timer Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolSettingButtonTimer:setTimer:  ( 在 button 设置倒计时 计时器 )
+ *  @brief  swpToolSettingButtonTimer:setTimer: ( 在 button 设置倒计时 计时器 )
  *
- *  @ param  button
+ *  @param  button  button
  *
- *  @ param  timer
+ *  @param  timer   time
  */
 + (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)timer {
     
@@ -248,13 +248,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Jump ViewController Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolJumpContrillerWith:pushController   ( Jump ViewController <跳转控制器 根据字符串实例化 控制器> )
+ *  @brief  swpToolJumpContrillerWith:pushController:   ( Jump ViewController <跳转控制器 根据字符串实例化 控制器> )
  *
- *  @ param  navigationController
+ *  @param  navigationController    navigationController
  *
- *  @ param  controllerClass
+ *  @param  controllerClass         controllerClass
  */
 + (void)swpToolJumpContrillerWith:(UINavigationController *)navigationController pushController:(NSString *)controllerClass {
     [navigationController pushViewController:[[[NSClassFromString(controllerClass) class] alloc] init] animated:YES];
@@ -262,17 +262,17 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Check Page Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolChekPageWithDataSource:page:firstPage    ( Check page )
+ *  @brief  swpToolChekPageWithDataSource:page:firstPage:   ( Check page )
  *
- *  @ param  dataSource
+ *  @param  dataSource          dataSource
  *
- *  @ param  page
+ *  @param  page                page
  *
- *  @ param  firstPage
+ *  @param  firstPage           firstPage
  *
- *  @ return NSMutableArray
+ *  @return NSMutableArray
  */
 + (NSMutableArray *)swpToolChekPageWithDataSource:(NSMutableArray *)dataSource page:(NSInteger)page firstPage:(NSInteger)firstPage {
     
@@ -284,17 +284,17 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolSettingLabelProperty:showBorderWidth:fontSize:fontColor ( Setting Lable Property )
+ *  @brief  swpToolSetLabelProperty:showBorderWidth:fontSize:fontColor: ( Setting Lable Property )
  *
- *  @ param  label
+ *  @param  label       label
  *
- *  @ param  isShow
+ *  @param  isShow      isShow
  *
- *  @ param  fontSize
+ *  @param  fontSize    fontSize
  *
- *  @ param  fontColor
+ *  @param  fontColor   fontColor
  */
 + (void)swpToolSetLabelProperty:(UILabel *)label showBorderWidth:(BOOL)isShow fontSize:(CGFloat)fontSize fontColor:(UIColor *)fontColor {
     
@@ -307,23 +307,23 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Set View UITapGestureRecognizer Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolSetTapGestureRecognizer:setViewTag:setClickCount:setTarget:setAction:setCancelsTouchesInView:    ( 绑定 一个 点击事件 给一个 view )
+ *  @brief  swpToolSetTapGestureRecognizer:setViewTag:setClickCount:setTarget:setAction:setCancelsTouchesInView:    ( 绑定 一个 点击事件 给一个 view )
  *
- *  @ param  view
+ *  @param  view        view
  *
- *  @ param  tag
+ *  @param  tag         tag
  *
- *  @ param  count
+ *  @param  count       count
  *
- *  @ param  target
+ *  @param  target      target
  *
- *  @ param  action
+ *  @param  action      action
  *
- *  @ param  cancels
+ *  @param  cancels     cancels
  *
- *  @ return UITapGestureRecognizer
+ *  @return UITapGestureRecognizer
  */
 + (UITapGestureRecognizer *)swpToolSetTapGestureRecognizer:(UIView *)view setViewTag:(NSInteger)tag setClickCount:(NSInteger)count setTarget:(id)target setAction:(SEL)action setCancelsTouchesInView:(BOOL)cancels {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
@@ -336,33 +336,16 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
     return tap;
 }
 
-#pragma mark - Time Dispose Method
-/**!
- *  @ author swp_song
- *
- *  @ brief  swpToolGetSystemDateWithFormat: ( Time Dispose <按照 指定 格式 时间 转换成字符串> )
- *
- *  @ param  format
- *
- *  @ return NSString
- */
-+ (NSString *)swpToolGetSystemDateWithFormat:(NSString *)format {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:format];
-    NSString *time                 = [dateFormatter stringFromDate:[NSDate date]];
-    return time;
-}
-
 
 #pragma - mark Delete Sandbox File Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolGetSystemDateWithFormat: ( Time Dispose <按照 指定 格式 时间 转换成字符串> )
+ *  @brief  swpToolDeleteFileWithFileName:  ( Delete Sandbox File )
  *
- *  @ param  format
+ *  @param  fileName    fileName
  *
- *  @ return NSString
+ *  @return BOOL
  */
 + (BOOL)swpToolDeleteFileWithFileName:(NSString *)fileName {
     
@@ -389,17 +372,15 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Image Compress Methods
 /**!
- *  @ author swp_song, 2015-12-08 11:13:51
+ *  @author swp_song
  *
- *  @ brief  swpToolCompressImage    ( Image Compress Methods <图片 压缩> )
+ *  @brief  swpToolCompressImage:scaleToSize:   ( Image Compress Methods <图片 压缩> )
  *
- *  @ param  image
+ *  @param  image       image
  *
- *  @ param  size
+ *  @param  size        size
  *
- *  @ return UIImage
- *
- *  @since  1.0.4
+ *  @return UIImage
  */
 + (UIImage *)swpToolCompressImage:(UIImage *)image scaleToSize:(CGSize)size {
     
@@ -424,15 +405,15 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Data Save Plist & Get Plist Data - Methods
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolDataWriteToPlist  ( 将 数据写入 plist 文件中 )
+ *  @brief  swpToolDataWriteToPlist:plistName:  ( 将 数据写入 plist 文件中 )
  *
- *  @ param  writeData                写入数据
+ *  @param  writeData                写入数据
  *
- *  @ param  plistName                plist 文件名称
+ *  @param  plistName                plist 文件名称
  *
- *  @ return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
+ *  @return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
  */
 + (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName {
 
@@ -488,13 +469,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolGetDictionaryFromPlist:  ( 取出 plist 文件中数据 返回一个字典 )
+ *  @brief  swpToolGetDictionaryFromPlist:  ( 取出 plist 文件中数据 返回一个字典 )
  *
- *  @ param  plistName                       plist 文件名称
+ *  @param  plistName                       plist 文件名称
  *
- *  @ return NSDictionary                    返回 取出的数据 字典
+ *  @return NSDictionary                    返回 取出的数据 字典
  */
 + (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName {
     // 默认路径
@@ -521,13 +502,13 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolGetInterfaceURL: ( 取出 主接口 接口 URL )
+ *  @brief  swpToolGetInterfaceURL: ( 取出 主接口 接口 URL )
  *
- *  @ param  key                     ( url key )
+ *  @param  key                     ( url key )
  *
- *  @ return NSString                ( url )
+ *  @return NSString                ( url )
  */
 + (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key {
     NSString *interfaceURL = [[[[SwpTools swpToolGetDictionaryFromPlist:nil] objectForKey:@"obj"] objectForKey:@"api"] objectForKey:key];
@@ -537,72 +518,72 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - About Screen Size Tools Methods
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolScreenWidth ( 取出 设备 实际的宽度值 )
+ *  @brief  swpToolScreenWidth  ( 取出 设备 实际的宽度值 )
  *
- *  @ return CGFloat
+ *  @return CGFloat
  */
 + (CGFloat)swpToolScreenWidth {
     return [[UIScreen mainScreen] bounds].size.width;
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolScreenHeight     ( 取出 设备 实际的高度值 )
+ *  @brief  swpToolScreenHeight ( 取出 设备 实际的高度值 )
  *
- *  @ return CGFloat
+ *  @return CGFloat
  */
 + (CGFloat)swpToolScreenHeight {
     return [[UIScreen mainScreen] bounds].size.height;
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolScreenSize   ( 取出 设备 实际的宽高 )
+ *  @brief  swpToolScreenSize   ( 取出 设备 实际的宽高 )
  *
- *  @ return CGSize
+ *  @return CGSize
  */
 + (CGSize)swpToolScreenSize {
     return CGSizeMake([[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolScreenScale:swpToolScreenScale:scaleWidth:scaleHeight  ( 计算 宽高比 )
+ *  @brief  swpToolScreenScale:swpToolScreenScale:scaleWidth:scaleHeight:   ( 计算 宽高比 )
  *
- *  @ param  screenWidth         ( 固定 宽度 或 高度 )
+ *  @param  screenWidth         ( 固定 宽度 或 高度 )
  *
- *  @ param  scaleWidth          比例值  (2:1 <2为该参数> )
+ *  @param  scaleWidth          比例值  (2:1 <2为该参数> )
  *
- *  @ param  scaleHeight         比例值  (2:1 <1为该参数> )
+ *  @param  scaleHeight         比例值  (2:1 <1为该参数> )
  *
- *  @ return CGFloat
+ *  @return CGFloat
  */
 + (CGFloat)swpToolScreenScale:(CGFloat)screenWidth scaleWidth:(CGFloat)scaleWidth scaleHeight:(CGFloat)scaleHeight {
     return screenWidth / scaleWidth * scaleHeight;
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolIphone4sScreenSize  ( 获取 4 / 4s 屏幕尺寸 )
+ *  @brief  swpToolIphone4sScreenSize   ( 获取 4 / 4s 屏幕尺寸 )
  *
- *  @ return CGSize
+ *  @return CGSize
  */
 + (CGSize)swpToolIphone4sScreenSize {
     return CGSizeMake(320, 480);
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolIphone5sScreenSize  ( 获取 5 / 5s 屏幕尺寸 )
+ *  @brief  swpToolIphone5sScreenSize   ( 获取 5 / 5s 屏幕尺寸 )
  *
- *  @ return CGSize
+ *  @return CGSize
  */
 + (CGSize)swpToolIphone5sScreenSize {
     return CGSizeMake(320, 568);
@@ -610,18 +591,22 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolIphone6pScreenSize  ( 获取 6p / 6ps 屏幕尺寸 )
+ *  @brief  swpToolIphone6sScreenSize   ( 获取 6 / 6s 屏幕尺寸 )
+ *
+ *  @return CGSize
  */
 + (CGSize)swpToolIphone6sScreenSize {
     return CGSizeMake(375, 667);
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolIphone6pScreenSize  ( 获取 6p / 6ps 屏幕尺寸 )
+ *  @brief  swpToolIphone6pScreenSize   ( 获取 6p / 6ps 屏幕尺寸 )
+ *
+ *  @return CGSize
  */
 + (CGSize)swpToolIphone6pScreenSize {
     return CGSizeMake(414, 736);
@@ -629,11 +614,11 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Get Application Delegate Method
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolApplicationDelegate ( 获取工 AppDelegat 代理 )
+ *  @brief  swpToolApplicationDelegate  ( 获取工 AppDelegat 代理 )
  *
- *  @ return AppDelegate
+ *  @return AppDelegate
  */
 + (AppDelegate *)swpToolApplicationDelegate {
     return (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -641,15 +626,15 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 #pragma mark - Check Existence Controller
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolCheckNavigationControllerExistenceController:checkController:checkResult:checkResult ( 验证 导航控制器 中 是否存在 指定 控制器 )
+ *  @brief  swpToolCheckNavigationControllerExistenceController:checkController:checkResult:checkResult ( 验证 导航控制器 中 是否存在 指定 控制器 )
  *
- *  @ param  navigationController
+ *  @param  navigationController    navigationController
  *
- *  @ param  checkController
+ *  @param  checkController         checkController
  *
- *  @ param  checkResult
+ *  @param  checkResult             checkResult
  */
 + (void)swpToolCheckNavigationControllerExistenceController:(UINavigationController *)navigationController checkController:(Class) checkController checkResult:(void(^)(id obj, UINavigationController *navigationController, BOOL * _Nonnull stop))checkResult {
     [navigationController.viewControllers enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -662,15 +647,15 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolValidationClassTypeWithObject:validationClass:   ( 验证 2个 类 是否 是同一个类 )
+ *  @brief  swpToolValidationClassTypeWithObject:validationClass:   ( 验证两个类是否是同一个类 )
  *
- *  @ param  object
+ *  @param  object              object
  *
- *  @ param  validationClass
+ *  @param  validationClass     validationClass
  *
- *  @ return BOOL
+ *  @return BOOL
  */
 + (BOOL)swpToolValidationClassTypeWithObject:(NSObject *)object validationClass:(Class)validationClass {
     
@@ -682,15 +667,15 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolValidationClassTypeWithDataSource:validationClass:   ( 验证 2个 类 是否 是同一个类 )
+ *  @brief  swpToolValidationClassTypeWithDataSource:validationClass:   ( 验证两个类是否是同一个类 )
  *
- *  @ param  objects
+ *  @param  objects             objects
  *
- *  @ param  validationClass
+ *  @param  validationClass     validationClass
  *
- *  @ return BOOL
+ *  @return BOOL
  */
 + (BOOL)swpToolValidationClassTypeWithDataSource:(NSArray<NSObject *> *)objects validationClass:(Class)validationClass {
     __block BOOL results = NO;
@@ -703,41 +688,107 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
     return results;
 }
 
+
+
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpToolViewBottomDrawLines:linesColor: ( 在 view 底部画线 在 view drawRect 这个方法中调用, 一般适用于 绘制 cell 分割线)
+ *  @brief  swpToolViewBottomDrawLines:linesHeight:linesColor:  ( 在 view 底部画线在 view drawRect 这个方法中调用, 一般适用于 绘制 cell 分割线)
  *
- *  @ param  frame
+ *  @param  frame   frame
  *
- *  @ param  color
+ *  @param  height  height
+ *
+ *  @param  color   color
  */
-+ (void)swpToolViewBottomDrawLines:(CGRect)frame linesColor:(UIColor *)color {
++ (void)swpToolViewBottomDrawLines:(CGRect)frame linesHeight:(CGFloat)height linesColor:(UIColor *)color {
     
     color = color ? color : [UIColor colorWithRed:0xE2 / 255.0f green:0xE2 / 255.0f blue:0xE2 / 255.0f alpha:1];
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextFillRect(context, frame);
     CGContextSetStrokeColorWithColor(context, color.CGColor);
-    CGContextStrokeRect(context, CGRectMake(0, frame.size.height - 1, frame.size.width, 1));
+    CGContextStrokeRect(context, CGRectMake(0, frame.size.height - height, frame.size.width, height));
 }
+
+
+/**!
+ *  @author swp_song
+ *
+ *  @brief  swpToolViewBottomDrawLines:linesColor:  ( 在 view 底部画线 在 view drawRect 这个方法中调用, 一般适用于 绘制 cell 分割线)
+ *
+ *  @param  frame       frame
+ *
+ *  @param  color       color
+ */
++ (void)swpToolViewBottomDrawLines:(CGRect)frame linesColor:(UIColor *)color {
+    [[self class] swpToolViewBottomDrawLines:frame linesHeight:1 linesColor:color];
+}
+
+#pragma mark - Calculate String Size
+/**!
+ *  @author swp_song
+ *
+ *  @brief  swpToolCalculateRowHeight:font:width:   ( 根据字符串的宽度, 计算字符串的高度 )
+ *
+ *  @param  string  string
+ *
+ *  @param  font    font
+ *
+ *  @param  width   width
+ *
+ *  @return CGFloat
+ */
++ (CGFloat)swpToolCalculateRowHeight:(NSString *)string font:(UIFont *)font width:(CGFloat)width {
+    
+    //  指定字号
+    NSDictionary *dictionary = @{NSFontAttributeName : font};
+    //  计算高度要先指定宽度
+    CGRect       rect        = [string boundingRectWithSize:CGSizeMake(width, 0) options:NSStringDrawingUsesLineFragmentOrigin |
+                                NSStringDrawingUsesFontLeading attributes:dictionary context:nil];
+    return rect.size.height;
+}
+
+/**!
+ *  @author swp_song
+ *
+ *  @brief  swpTooCalculateRowWidth:font:height:    ( 根据字符串的高度, 计算字符串的宽度 )
+ *
+ *  @param  string  string
+ *
+ *  @param  font    font
+ *
+ *  @param  height  height
+ *
+ *  @return CGFloat
+ */
++ (CGFloat)swpTooCalculateRowWidth:(NSString *)string font:(UIFont *)font height:(CGFloat)height {
+    
+    //  指定字号
+    NSDictionary *dictionary = @{NSFontAttributeName : font};
+    //  计算高度要先指定高度
+    CGRect       rect        = [string boundingRectWithSize:CGSizeMake(0, height) options:NSStringDrawingUsesLineFragmentOrigin |
+                                NSStringDrawingUsesFontLeading attributes:dictionary context:nil];
+    return rect.size.width;
+}
+
 
 
 #pragma mark - Order Error & Order Test - Method
 /**!
  *  设置导航控制器 搜索条
  *
- *  @ param  searchBarWidth searchBar 宽度
- *  @ param  searchBarColor searchBar 背景颜色
- *  @ param  tag            searchBar tag
- *  @ param  imageX         searchBar 图片的X的值
- *  @ param  image          searchBar 显示的图片
- *  @ param  titleWidth     searchBar 文字的宽度
- *  @ param  fontSize       searchBar 文字的大小
- *  @ param  fontColor      searchBar 文字的颜色
- *  @ param  title          searchBar 显示的文字
+ *  @param  searchBarWidth searchBar 宽度
+ *  @param  searchBarColor searchBar 背景颜色
+ *  @param  tag            searchBar tag
+ *  @param  imageX         searchBar 图片的X的值
+ *  @param  image          searchBar 显示的图片
+ *  @param  titleWidth     searchBar 文字的宽度
+ *  @param  fontSize       searchBar 文字的大小
+ *  @param  fontColor      searchBar 文字的颜色
+ *  @param  title          searchBar 显示的文字
  *
- *  @ return UIView
+ *  @return UIView
  */
 + (UIView *)settingNavSearchBarWidth:(CGFloat)searchBarWidth backgroundColor:(UIColor *)searchBarColor searchBarTag:(NSInteger)tag searchImageX:(CGFloat)imageX searchImage:(NSString *)image  searchTitleWidth:(CGFloat)titleWidth searchTitleFontSize:(CGFloat)fontSize searchTitleFontColor:(UIColor *)fontColor searchTitle:(NSString *)title  {
     
@@ -796,16 +847,18 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
     // Return the new image.
     return newImage;
     
+    //    NSDictionary *dict1 = @{
+    //                            @"aaa" : @"111",
+    //                            @"bbb" : @"222",
+    //                            };
+    //    //
+    //    NSData      *jsonData1 = [NSJSONSerialization dataWithJSONObject:dict1 options:NSJSONWritingPrettyPrinted error:nil];
+    //    NSString    *json1     =  [[NSString alloc] initWithData:jsonData1 encoding:NSUTF8StringEncoding];
+    //    NSLog(@"%@", json1);
+    
 }
 
-//    NSDictionary *dict1 = @{
-//                            @"aaa" : @"111",
-//                            @"bbb" : @"222",
-//                            };
-//    //
-//    NSData      *jsonData1 = [NSJSONSerialization dataWithJSONObject:dict1 options:NSJSONWritingPrettyPrinted error:nil];
-//    NSString    *json1     =  [[NSString alloc] initWithData:jsonData1 encoding:NSUTF8StringEncoding];
-//    NSLog(@"%@", json1);
+
 
 
 @end

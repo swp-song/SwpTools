@@ -18,11 +18,11 @@
 @implementation SwpGetSystemInformation
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpGetIphoneIpAddress ( 获取 当前 电话的 Ip 地址 )
+ *  @brief  swpGetIphoneIpAddress   ( 获取 当前 电话的 Ip 地址 )
  *
- *  @ return NSString Ip
+ *  @return NSString Ip
  */
 + (NSString *)swpGetIphoneIpAddress {
     
@@ -53,11 +53,11 @@
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpGetIphoneDeviceDeviceType   ( 获取 设备 类型 )
+ *  @brief  swpGetIphoneDeviceDeviceType    ( 获取 设备 类型 )
  *
- *  @ return NSString
+ *  @return NSString
  */
 + (NSString *)swpGetIphoneDeviceDeviceType {
     

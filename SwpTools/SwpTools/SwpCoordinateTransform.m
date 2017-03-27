@@ -15,11 +15,11 @@
  *
  *  @ brief  SwpCoordinate2DMake
  *
- *  @ param  latitude  纬度
+ *  @param  latitude  纬度
  *
- *  @ param  longitude 经度
+ *  @param  longitude 经度
  *
- *  @ return SwpCoordinate2D
+ *  @return SwpCoordinate2D
  */
 SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
     SwpCoordinate2D swpCoordinate2D = {latitude, longitude};
@@ -27,15 +27,15 @@ SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpCoordinateTransformAMAPFromBaiDu:longitude:  ( 经纬度 转换 高德 经纬度 转换成 百度 经纬度 )
+ *  @brief  swpCoordinateTransformBaiDuFromAMAP:longitude:  ( 经纬度 转换 百度 经纬度 转换成 高德 经纬度 )
  *
- *  @ param  latitude
+ *  @param  latitude    纬度
  *
- *  @ param  longitude
+ *  @param  longitude   经度
  *
- *  @ return SwpCoordinate2D
+ *  @return SwpCoordinate2D
  */
 + (SwpCoordinate2D)swpCoordinateTransformAMAPFromBaiDu:(double)latitude longitude:(double)longitude {
     static double const xPI   = (3.14159265358979324 * 3000.0 / 180.0);
@@ -53,15 +53,15 @@ SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpCoordinateTransformBaiDuFromAMAP:longitude:  ( 经纬度 转换 百度 经纬度 转换成 高德 经纬度 )
+ *  @brief  swpCoordinateTransformBaiDuFromAMAP:longitude:  ( 经纬度 转换 百度 经纬度 转换成 高德 经纬度 )
  *
- *  @ param  latitude
+ *  @param  latitude    纬度
  *
- *  @ param  longitude
+ *  @param  longitude   经度
  *
- *  @ return SwpCoordinate2D
+ *  @return SwpCoordinate2D
  */
 + (SwpCoordinate2D)swpCoordinateTransformBaiDuFromAMAP:(double)latitude longitude:(double)longitude {
     

@@ -37,6 +37,23 @@
 
 ##### 版本记录
 
+-------
+```
+1. 版本版本: 3.1.0
+
+2. 更新时间: 2017-03-27 11:06:29
+
+3. 更新内容:  
+    //  新增方法底部画线方法
+    1. + (void)swpToolViewBottomDrawLines:(CGRect)frame linesHeight:(CGFloat)height linesColor:(UIColor *)color;
+
+    //  根据字符串的宽度, 计算字符串的高度
+    2. + (CGFloat)swpToolCalculateRowHeight:(NSString *)string font:(UIFont *)font width:(CGFloat)width;
+
+    //  根据字符串的高度, 计算字符串的宽度
+    3. + (CGFloat)swpTooCalculateRowWidth:(NSString *)string font:(UIFont *)font height:(CGFloat)height;
+```
+-------
 ```
 1. 版本版本: 3.0.0
 
@@ -46,15 +63,6 @@
 ```
 -------
 
-```
-1. 版本版本:
-
-2. 更新时间: 2017-03-12 14:49:59
-
-3. 更新内容:
-	* + (void)swpToolViewBottomDrawLines:(CGRect)frame linesColor:(UIColor *)color; < view 底部 画线方法 适用于 cell 分割线, 详细备注请查看 Demo >
-```
--------
 
 #### 备注：
 ```
