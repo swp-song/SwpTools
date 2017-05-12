@@ -41,6 +41,17 @@
 
 -------
 ```
+1. 版本版本: 3.1.3
+
+2. 更新时间: 2017-05-12 11:07:36
+
+3. 更新内容:
+    1. 更新Release 装台禁止打印信息
+    2. 新增打印宏 Release 可以打印
+```
+
+-------
+```
 1. 版本版本: 3.1.2
 
 2. 更新时间: 2017-03-27 11:17:03
@@ -50,23 +61,6 @@
     2. 修改 pod 文件
 ```
 
--------
-
-```
-1. 版本版本: 3.1.0
-
-2. 更新时间: 2017-03-27 11:06:29
-
-3. 更新内容:  
-    //  新增方法底部画线方法
-    1. + (void)swpToolViewBottomDrawLines:(CGRect)frame linesHeight:(CGFloat)height linesColor:(UIColor *)color;
-
-    //  根据字符串的宽度, 计算字符串的高度
-    2. + (CGFloat)swpToolCalculateRowHeight:(NSString *)string font:(UIFont *)font width:(CGFloat)width;
-
-    //  根据字符串的高度, 计算字符串的宽度
-    3. + (CGFloat)swpTooCalculateRowWidth:(NSString *)string font:(UIFont *)font height:(CGFloat)height;
-```
 -------
 
 #### 备注：
@@ -81,3 +75,5 @@
 **著作权归 ©swp_song, 如需转载请标明出处**
 
 -------
+
+

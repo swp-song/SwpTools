@@ -20,11 +20,18 @@ fprintf(stderr, "-------\n");                                               \
 } while (0)
 
 
-    /*! 打印日志 !*/
+/*! 打印日志 !*/
 #ifdef DEBUG
     #define NSLog(...) NSLogFileNumber(__VA_ARGS__)
 #else
-    #define NSLog(...)
+
+#endif
+
+
+#ifdef DEBUG
+    #define SwpNSLog(...) NSLogFileNumber(__VA_ARGS__)
+#else
+    #define SwpNSLog(...) NSLogFileNumber(__VA_ARGS__)
 #endif
 
 
