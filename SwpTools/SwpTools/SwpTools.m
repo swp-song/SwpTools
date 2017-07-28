@@ -215,6 +215,21 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
  *  @param  timer   time
  */
 + (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)timer {
+    [self.class swpToolSetButtonTimer:button setTimer:timer appendTitle:@"秒后重发"];
+}
+
+/**!
+ *  @author swp_song
+ *
+ *  @brief  swpToolSetButtonTimer:setTimer:appendTitle: ( 在 button 设置倒计时计时器 )
+ *
+ *  @param  button      button
+ *
+ *  @param  timer       timer
+ *
+ *  @param  appendTitle appendTitle
+ */
++ (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)timer appendTitle:(NSString *)appendTitle {
     
     button.enabled           = YES;
     __block int timeout      = timer;
@@ -237,7 +252,7 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
                 //NSLog(@"____%@",strTime);
-                [button setTitle:[NSString stringWithFormat:@"%@秒后重发", strTime] forState:UIControlStateNormal];
+                [button setTitle:[NSString stringWithFormat:@"%@%@", strTime, appendTitle] forState:UIControlStateNormal];
                 button.userInteractionEnabled = NO;
             });
             timeout--;

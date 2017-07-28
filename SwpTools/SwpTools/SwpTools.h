@@ -159,6 +159,18 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param  time    time
  */
 + (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)time;
+/**!
+ *  @author swp_song
+ *
+ *  @brief  swpToolSetButtonTimer:setTimer:appendTitle:     ( 在 button 设置倒计时计时器 )
+ *
+ *  @param  button      button
+ *
+ *  @param  timer       timer
+ *
+ *  @param  appendTitle appendTitle
+ */
++ (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)timer appendTitle:(NSString * _Nullable)appendTitle;
 
 #pragma mark - Jump ViewController Method
 /**!
