@@ -231,6 +231,7 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
  */
 + (void)swpToolSetButtonTimer:(UIButton *)button setTimer:(int)timer appendTitle:(NSString *)appendTitle {
     
+    NSString *title          = button.titleLabel.text;
     button.enabled           = YES;
     __block int timeout      = timer;
     dispatch_queue_t queue   = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -242,7 +243,7 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
             dispatch_source_cancel(_timer);
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
-                [button setTitle:@"获取验证码" forState:UIControlStateNormal];
+                [button setTitle:title forState:UIControlStateNormal];
                 button.userInteractionEnabled = YES;
             });
         } else {
