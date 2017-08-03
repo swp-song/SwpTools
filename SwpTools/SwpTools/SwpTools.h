@@ -491,6 +491,18 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)swpTooCalculateRowWidth:(NSString *)string font:(UIFont *)font height:(CGFloat)height;
 
 
+/**!
+ *  @author swp_song
+ *
+ *  @brief  swpToolCharacterStringContainsEmoji:    ( 验证字符串中是否含有 < Emoji > )
+ *
+ *  @param  string  string
+ *
+ *  @return BOOL
+ */
++ (BOOL)swpToolCharacterStringContainsEmoji:(NSString *)string;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
