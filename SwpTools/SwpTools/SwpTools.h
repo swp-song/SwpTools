@@ -478,7 +478,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**!
  *  @author swp_song
  *
- *  @brief  swpTooCalculateRowWidth:font:height:    ( 根据字符串的高度, 计算字符串的宽度 )
+ *  @brief  swpToolCalculateRowWidth:font:height:   ( 根据字符串的高度, 计算字符串的宽度 )
  *
  *  @param  string  string
  *
@@ -488,7 +488,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return CGFloat
  */
-+ (CGFloat)swpTooCalculateRowWidth:(NSString *)string font:(UIFont *)font height:(CGFloat)height;
++ (CGFloat)swpToolCalculateRowWidth:(NSString *)string font:(UIFont *)font height:(CGFloat)height;
 
 
 /**!

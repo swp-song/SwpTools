@@ -768,7 +768,7 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
 /**!
  *  @author swp_song
  *
- *  @brief  swpTooCalculateRowWidth:font:height:    ( 根据字符串的高度, 计算字符串的宽度 )
+ *  @brief  swpToolCalculateRowWidth:font:height:       ( 根据字符串的高度, 计算字符串的宽度 )
  *
  *  @param  string  string
  *
