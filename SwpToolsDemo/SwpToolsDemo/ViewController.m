@@ -42,7 +42,7 @@
     
     NSLog(@"%f", [SwpTools swpToolCalculateRowHeight:string font:[UIFont systemFontOfSize:12] width:[SwpTools swpToolScreenWidth]]);
     
-    NSLog(@"%f", [SwpTools swpTooCalculateRowWidth:string font:[UIFont systemFontOfSize:12] height:[SwpTools swpToolScreenHeight]]);
+    NSLog(@"%f", [SwpTools swpToolCalculateRowWidth:string font:[UIFont systemFontOfSize:12] height:[SwpTools swpToolScreenHeight]]);
     
     SwpLog(@"%@", @{@"key" : @"value", @"key1" : @"value1", @"key2" : @"value2"});
     NSLog(@"%@", @{@"key" : @"value", @"key1" : @"value1", @"key2" : @"value2"});
