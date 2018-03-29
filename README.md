@@ -1,7 +1,8 @@
 # SwpToolsiOS封装一些常用方法
 
+### SwpTools 
 
-### SwpTools (简介):
+[![CI Status](http://img.shields.io/travis/swp-song/SwpTools.svg?style=flat)](https://travis-ci.org/swp-song/SwpTools) [![Version](https://img.shields.io/cocoapods/v/SwpTools.svg?style=flat)](http://cocoapods.org/pods/SwpTools) [![License](https://img.shields.io/cocoapods/l/SwpTools.svg?style=flat)](http://cocoapods.org/pods/SwpTools) [![Platform](https://img.shields.io/cocoapods/p/SwpTools.svg?style=flat)](http://cocoapods.org/pods/SwpTools)
 
 > * 封装一些常用方法, 开发更简便，效率.
 
@@ -33,17 +34,17 @@
 
 ### 版本记录
 
+> * 版本版本：3.4.2
+> * 更新时间：2018-03-29 19:48:46
+> * 更新内容：
+>>  * 更新 Demo
+
+-------
+
 > * 版本版本：3.4.1
 > * 更新时间：2018-03-29 19:39:05
 > * 更新内容：
 >>  * 废弃一些方法。
-
--------
-
-> * 版本版本：3.4.0
-> * 更新时间：2017-10-19 16:38:27
-> * 更新内容：
->>  * 新增获取设备类型方法
 
 -------
 
@@ -61,3 +62,5 @@
  > * **著作权归 ©swp_song，如需转载请标明出处**
 
 -------
+
+
