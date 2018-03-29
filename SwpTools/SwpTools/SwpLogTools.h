@@ -1,13 +1,13 @@
 //
-//  SwpLog.h
+//  SwpLogTools.h
 //  swp_song
 //
 //  Created by swp_song on 16/4/17.
 //  Copyright © 2016年 swp_song. All rights reserved.
 //
 
-#ifndef SwpLog_h
-#define SwpLog_h
+#ifndef SwpLogTools_h
+#define SwpLogTools_h
 
 
 /*! 打印调试信息 方法名称 在该文件的行 !*/
@@ -39,4 +39,4 @@ fprintf(stderr, "---------------------------------------------------------------
 
 
 
-#endif /* SwpLog_h */
+#endif /* SwpLogTools_h */

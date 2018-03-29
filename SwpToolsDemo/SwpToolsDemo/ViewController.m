@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 
-#import "SwpLog.h"
-#import "SwpTools.h"
-#import "SwpGetSystemInformation.h"
-#import "SwpCoordinateTransform.h"
+
+#import <SwpTools/SwpTools.h>
+#import <SwpTools/SwpLogTools.h>
+#import <SwpTools/SwpCoordinateTransform.h>
+#import <SwpTools/SwpGetSystemInformation.h>
 
 @interface ViewController ()
 
@@ -20,34 +21,20 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"%@", NSStringFromCGSize([SwpTools swpToolScreenSize]));
-    NSLog(@"%@", [SwpGetSystemInformation swpGetIphoneIpAddress]);
     
-    // 坐标拾取稀土 可以 根据 坐标反查
-    // http://lbs.amap.com/console/show/picker 高德
-    // http://api.map.baidu.com/lbsapi/getpoint/index.html 百度
-    // 126.632979, 45.761554  高德 哈尔滨 火车站 坐标 ( 转换之前 )
-    // baidu 转成 百度坐标
-    SwpCoordinate2D baidu = [SwpCoordinateTransform swpCoordinateTransformAMAPFromBaiDu:45.761554 longitude:126.632979];
     
-    // 126.639577, 45.767864  百度 哈尔滨 火车站 坐标 ( 转换之前 )
-    // amap 转成 高德 坐标
-    SwpCoordinate2D amap  = [SwpCoordinateTransform swpCoordinateTransformBaiDuFromAMAP:45.767864 longitude:126.639577];
-    NSLog(@"百度坐标: %f,%f", baidu.longitude, baidu.latitude);
-    NSLog(@"高德坐标: %f,%f", amap.longitude, amap.latitude);
+    {
+#warning 以下都是废弃方法，如有使用尽快迁移到新的 Api 上，会在下几个版本移除方法。
+        SwpCoordinate2D BD09_1 = [SwpCoordinateTransform swpCoordinateTransformAMAPFromBaiDu:39.909745 longitude:116.402455];
+        NSLog(@"%f,%f", BD09_1.longitude, BD09_1.latitude);
+        SwpCoordinate2D GCJ02 = [SwpCoordinateTransform swpCoordinateTransformBaiDuFromAMAP:BD09_1.latitude longitude:BD09_1.longitude];
+        NSLog(@"%f,%f", GCJ02.longitude, GCJ02.latitude);
+        NSLog(@"%@", [SwpGetSystemInformation swpGetIphoneIpAddress]);
+    }
     
-    NSString *string = @"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈";
-    
-    NSLog(@"%f", [SwpTools swpToolCalculateRowHeight:string font:[UIFont systemFontOfSize:12] width:[SwpTools swpToolScreenWidth]]);
-    
-    NSLog(@"%f", [SwpTools swpToolCalculateRowWidth:string font:[UIFont systemFontOfSize:12] height:[SwpTools swpToolScreenHeight]]);
-    
-    SwpLog(@"%@", @{@"key" : @"value", @"key1" : @"value1", @"key2" : @"value2"});
-    NSLog(@"%@", @{@"key" : @"value", @"key1" : @"value1", @"key2" : @"value2"});
-    
-    NSLog(@"%ld", [SwpGetSystemInformation swpGetIphoneDeviceByScreenSize]);
     
 }
 

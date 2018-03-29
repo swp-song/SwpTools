@@ -1,0 +1,1 @@
+../../../../../SwpTools/SwpTools/SwpGetSystemInformation.h

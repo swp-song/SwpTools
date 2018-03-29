@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+
+#define SWP_GET_SYSTEM_INFORMATION_DEPRECATED(instead) NS_DEPRECATED_IOS(1_0_2, 3_4_0, instead)
+
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -30,14 +33,6 @@ typedef NS_ENUM(NSInteger, SwpiPhoneScreenSize) {
 
 @interface SwpGetSystemInformation : NSObject
 
-/**
- *  @author swp_song
- *
- *  @brief  swpGetIphoneIpAddress   ( 获取当前电话的 Ip 地址 )
- *
- *  @return NSString Ip
- */
-+ (NSString *)swpGetIphoneIpAddress;
 
 /**
  *  @author swp_song
@@ -57,6 +52,18 @@ typedef NS_ENUM(NSInteger, SwpiPhoneScreenSize) {
  *  @return SwpiPhoneScreenSize
  */
 + (SwpiPhoneScreenSize)swpGetIphoneDeviceByScreenSize;
+
+#pragma mark - Deprecate Methods
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpGetIphoneIpAddress   ( 获取当前电话的 Ip 地址 )
+ *
+ *  @return NSString Ip
+ */
++ (NSString *)swpGetIphoneIpAddress SWP_GET_SYSTEM_INFORMATION_DEPRECATED("废弃方法，请勿使用，坐标转换，方法迁移到 <https://github.com/swp-song/SwpDeviceIpUtils> 这里该类会在下几个版本移除，请及时更新");
+
+
 
 @end
 NS_ASSUME_NONNULL_END

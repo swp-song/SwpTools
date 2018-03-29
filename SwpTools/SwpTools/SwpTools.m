@@ -12,7 +12,7 @@
 
 @class AppDelegate;
 
-static NSString * const defaultPlistName = @"mainInterfaceData.plist";
+
 
 @implementation SwpTools
 
@@ -421,118 +421,6 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
     return [UIImage imageWithData:imageData];
 }
 
-#pragma mark - Data Save Plist & Get Plist Data - Methods
-/**
- *  @author swp_song
- *
- *  @brief  swpToolDataWriteToPlist:plistName:  ( 将 数据写入 plist 文件中 )
- *
- *  @param  writeData                写入数据
- *
- *  @param  plistName                plist 文件名称
- *
- *  @return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
- */
-+ (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName {
-
-    // 建立文件管理
-    NSFileManager *fm        = [NSFileManager defaultManager];
-
-    // 找到Documents文件所在的路径
-    NSArray       *path      = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSLog(@"path=%@",path);
-
-    // 取得第一个Documents文件夹的路径
-    NSString      *filePath = [path objectAtIndex:0];
-    
-    // 默认路径
-    plistName               = plistName == nil ? defaultPlistName : plistName;
-   
-    // 把TestPlist文件加入
-    NSString      *plistPath = [filePath stringByAppendingPathComponent:plistName];
-    
-    if ([fm fileExistsAtPath:plistPath]) {
-        NSLog(@"文件已存在,开始删除源文件");
-        //修改文件内容
-        if ([fm removeItemAtPath:plistPath error:nil]) {
-            NSLog(@"文件删除成功");
-            //开始创建文件
-            if ([fm createFileAtPath:plistPath contents:nil attributes:nil]) {
-                NSLog(@"文件创建成功,开始写入数据");
-                if ([writeData writeToFile:plistPath atomically:YES]) {
-                    return YES;
-                }
-            } else {
-                NSLog(@"文件创建失败");
-                return NO;
-            }
-        } else {
-            NSLog(@"文件删除失败");
-            return NO;
-        }
-        
-    } else {
-        //开始创建文件
-        if ([fm createFileAtPath:plistPath contents:nil attributes:nil]) {
-            NSLog(@"文件创建成功,开始写入数据");
-            if ([writeData writeToFile:plistPath atomically:YES]) {
-                return YES;
-            }
-        } else {
-            NSLog(@"文件创建失败,尝试重新获取接口数据");
-            return NO;
-        }
-    }
-    return NO;
-}
-
-/**
- *  @author swp_song
- *
- *  @brief  swpToolGetDictionaryFromPlist:  ( 取出 plist 文件中数据 返回一个字典 )
- *
- *  @param  plistName                       plist 文件名称
- *
- *  @return NSDictionary                    返回 取出的数据 字典
- */
-+ (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName {
-    // 默认路径
-    plistName                = plistName == nil ? defaultPlistName : plistName;
-    //建立文件管理
-    NSFileManager *fm        = [NSFileManager defaultManager];
-    //找到Documents文件所在的路径
-    NSArray       *path      = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-
-    //取得第一个Documents文件夹的路径
-//    NSString      *filePath  = [path objectAtIndex:0];
-    NSString      *filePath  = [path firstObject];
-
-    //把TestPlist文件加入
-    NSString      *plistPath = [filePath stringByAppendingPathComponent:plistName];
-    
-    if ([fm fileExistsAtPath:plistPath]) {
-        NSLog(@"plist文件已找到,返回各个文件接口");
-        return [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    } else {
-        NSLog(@"plist文件未找到");
-        return nil;
-    }
-}
-
-/**
- *  @author swp_song
- *
- *  @brief  swpToolGetInterfaceURL: ( 取出 主接口 接口 URL )
- *
- *  @param  key                     ( url key )
- *
- *  @return NSString                ( url )
- */
-+ (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key {
-    NSString *interfaceURL = [[[[SwpTools swpToolGetDictionaryFromPlist:nil] objectForKey:@"obj"] objectForKey:@"api"] objectForKey:key];
-    interfaceURL           = interfaceURL == nil ? @"" : interfaceURL;
-    return interfaceURL;
-}
 
 #pragma mark - About Screen Size Tools Methods
 /**
@@ -923,6 +811,124 @@ static NSString * const defaultPlistName = @"mainInterfaceData.plist";
     //    NSString    *json1     =  [[NSString alloc] initWithData:jsonData1 encoding:NSUTF8StringEncoding];
     //    NSLog(@"%@", json1);
     
+}
+
+
+#pragma mark - Deprecate Methods
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpToolDataWriteToPlist:plistName:  ( 将 数据写入 plist 文件中 )
+ *
+ *  @param  writeData                写入数据
+ *
+ *  @param  plistName                plist 文件名称
+ *
+ *  @return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
+ */
++ (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName {
+    
+    static NSString * const defaultPlistName = @"mainInterfaceData.plist";
+    
+    // 建立文件管理
+    NSFileManager *fm        = [NSFileManager defaultManager];
+    
+    // 找到Documents文件所在的路径
+    NSArray       *path      = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSLog(@"path=%@",path);
+    
+    // 取得第一个Documents文件夹的路径
+    NSString      *filePath = [path objectAtIndex:0];
+    
+    // 默认路径
+    plistName               = plistName == nil ? defaultPlistName : plistName;
+    
+    // 把TestPlist文件加入
+    NSString      *plistPath = [filePath stringByAppendingPathComponent:plistName];
+    
+    if ([fm fileExistsAtPath:plistPath]) {
+        NSLog(@"文件已存在,开始删除源文件");
+        //修改文件内容
+        if ([fm removeItemAtPath:plistPath error:nil]) {
+            NSLog(@"文件删除成功");
+            //开始创建文件
+            if ([fm createFileAtPath:plistPath contents:nil attributes:nil]) {
+                NSLog(@"文件创建成功,开始写入数据");
+                if ([writeData writeToFile:plistPath atomically:YES]) {
+                    return YES;
+                }
+            } else {
+                NSLog(@"文件创建失败");
+                return NO;
+            }
+        } else {
+            NSLog(@"文件删除失败");
+            return NO;
+        }
+        
+    } else {
+        //开始创建文件
+        if ([fm createFileAtPath:plistPath contents:nil attributes:nil]) {
+            NSLog(@"文件创建成功,开始写入数据");
+            if ([writeData writeToFile:plistPath atomically:YES]) {
+                return YES;
+            }
+        } else {
+            NSLog(@"文件创建失败,尝试重新获取接口数据");
+            return NO;
+        }
+    }
+    return NO;
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpToolGetDictionaryFromPlist:  ( 取出 plist 文件中数据 返回一个字典 )
+ *
+ *  @param  plistName                       plist 文件名称
+ *
+ *  @return NSDictionary                    返回 取出的数据 字典
+ */
++ (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName {
+    static NSString * const defaultPlistName = @"mainInterfaceData.plist";
+    
+    // 默认路径
+    plistName                = plistName == nil ? defaultPlistName : plistName;
+    //建立文件管理
+    NSFileManager *fm        = [NSFileManager defaultManager];
+    //找到Documents文件所在的路径
+    NSArray       *path      = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    //取得第一个Documents文件夹的路径
+    //    NSString      *filePath  = [path objectAtIndex:0];
+    NSString      *filePath  = [path firstObject];
+    
+    //把TestPlist文件加入
+    NSString      *plistPath = [filePath stringByAppendingPathComponent:plistName];
+    
+    if ([fm fileExistsAtPath:plistPath]) {
+        NSLog(@"plist文件已找到,返回各个文件接口");
+        return [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    } else {
+        NSLog(@"plist文件未找到");
+        return nil;
+    }
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpToolGetInterfaceURL: ( 取出 主接口 接口 URL )
+ *
+ *  @param  key                     ( url key )
+ *
+ *  @return NSString                ( url )
+ */
++ (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key {
+    NSString *interfaceURL = [[[[SwpTools swpToolGetDictionaryFromPlist:nil] objectForKey:@"obj"] objectForKey:@"api"] objectForKey:key];
+    interfaceURL           = interfaceURL == nil ? @"" : interfaceURL;
+    return interfaceURL;
 }
 
 

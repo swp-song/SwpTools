@@ -11,13 +11,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class WKWebView, UIWebView;
+@class WKWebView, UIWebView, AppDelegate;
 
-@class AppDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define SwpRefreshDeprecated(instead) NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, instead)
+
+#define SWP_TOOLS_DEPRECATED(instead) NS_DEPRECATED_IOS(1_0_2, 2_0_0, instead)
 
 @interface SwpTools : NSObject
 
@@ -268,43 +268,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)swpToolCompressImage:(UIImage *)image scaleToSize:(CGSize)size;
 
-
-#pragma mark - Data Save Plist & Get Plist Data - Methods
-/**
- *  @author swp_song
- *
- *  @brief  swpToolDataWriteToPlist:plistName:  ( 将 数据写入 plist 文件中 )
- *
- *  @param  writeData                写入数据
- *
- *  @param  plistName                plist 文件名称
- *
- *  @return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
- */
-+ (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName SwpRefreshDeprecated("废弃方法, 请勿使用");
-
-/**
- *  @author swp_song
- *
- *  @brief  swpToolGetDictionaryFromPlist:  ( 取出 plist 文件中数据 返回一个字典 )
- *
- *  @param  plistName                       plist 文件名称
- *
- *  @return NSDictionary                    返回 取出的数据 字典
- */
-+ (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName SwpRefreshDeprecated("废弃方法, 请勿使用");
-
-/**
- *  @author swp_song
- *
- *  @brief  swpToolGetInterfaceURL: ( 取出 主接口 接口 URL )
- *
- *  @param  key                     ( url key )
- *
- *  @return NSString                ( url )
- */
-+ (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key SwpRefreshDeprecated("废弃方法, 请勿使用");
-
 #pragma mark - Tools Methods
 /**
  *  @author swp_song
@@ -502,6 +465,43 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return BOOL
  */
 + (BOOL)swpToolCharacterStringContainsEmoji:(NSString *)string;
+
+
+#pragma mark - Deprecate Methods
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpToolDataWriteToPlist:plistName:  ( 将 数据写入 plist 文件中 )
+ *
+ *  @param  writeData                写入数据
+ *
+ *  @param  plistName                plist 文件名称
+ *
+ *  @return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
+ */
++ (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用");
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpToolGetDictionaryFromPlist:  ( 取出 plist 文件中数据 返回一个字典 )
+ *
+ *  @param  plistName                       plist 文件名称
+ *
+ *  @return NSDictionary                    返回 取出的数据 字典
+ */
++ (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用");
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpToolGetInterfaceURL: ( 取出 主接口 接口 URL )
+ *
+ *  @param  key                     ( url key )
+ *
+ *  @return NSString                ( url )
+ */
++ (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用");
 
 
 @end

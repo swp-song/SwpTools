@@ -1,0 +1,16 @@
+PODS:
+  - SwpTools (3.4.0)
+
+DEPENDENCIES:
+  - SwpTools (from `../`)
+
+EXTERNAL SOURCES:
+  SwpTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwpTools: 01ffa16ea7f6fa9b9229b576745a8c58acf1a2a2
+
+PODFILE CHECKSUM: a33faab4eec4bf396708c3bc4d3858d9591e2e8b
+
+COCOAPODS: 1.5.0.beta.1

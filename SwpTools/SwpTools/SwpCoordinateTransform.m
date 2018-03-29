@@ -8,6 +8,9 @@
 
 #import "SwpCoordinateTransform.h"
 
+
+#define swp_coordinate_inline __inline__ __attribute__((always_inline))
+
 @implementation SwpCoordinateTransform
 
 /**
@@ -26,6 +29,8 @@ SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
     return swpCoordinate2D;
 }
 
+
+#pragma mark - Deprecate
 /**
  *  @author swp_song
  *
@@ -38,15 +43,15 @@ SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
  *  @return SwpCoordinate2D
  */
 + (SwpCoordinate2D)swpCoordinateTransformAMAPFromBaiDu:(double)latitude longitude:(double)longitude {
-    static double const xPI   = (3.14159265358979324 * 3000.0 / 180.0);
+    static double const xSWP_PI   = (3.14159265358979324 * 3000.0 / 180.0);
     NSString *latitudeString  = [NSString stringWithFormat:@"%f", latitude];
     NSString *longitudeString = [NSString stringWithFormat:@"%f", longitude];
     double latit              = [latitudeString  doubleValue];
     double longt              = [longitudeString doubleValue];
     double x                  = longt;
     double y                  = latit;
-    double z                  = sqrt(x * x + y * y) + 0.00002 * sin(y * xPI);
-    double theta              = atan2(y, x) + 0.000003 * cos(x * xPI);
+    double z                  = sqrt(x * x + y * y) + 0.00002 * sin(y * xSWP_PI);
+    double theta              = atan2(y, x) + 0.000003 * cos(x * xSWP_PI);
     longt                     = z * cos(theta) + 0.0065;
     latit                     = z * sin(theta) + 0.006;
     return SwpCoordinate2DMake(latit, longt);
@@ -65,7 +70,7 @@ SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
  */
 + (SwpCoordinate2D)swpCoordinateTransformBaiDuFromAMAP:(double)latitude longitude:(double)longitude {
     
-    static double const xPI   = (3.14159265358979324 * 3000.0 / 180.0);
+    static double const xSWP_PI   = (3.14159265358979324 * 3000.0 / 180.0);
     NSString *latitudeString  = [NSString stringWithFormat:@"%f", latitude];
     NSString *longitudeString = [NSString stringWithFormat:@"%f", longitude];
     
@@ -74,12 +79,14 @@ SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude) {
     //百度坐标系转换为火星坐标系
     double x                  = longt - 0.0065;
     double y                  = latit - 0.006;
-    double z                  = sqrt(x * x + y * y) - 0.00002 * sin(y * xPI);
-    double theta              = atan2(y, x) - 0.000003 * cos(x * xPI);
+    double z                  = sqrt(x * x + y * y) - 0.00002 * sin(y * xSWP_PI);
+    double theta              = atan2(y, x) - 0.000003 * cos(x * xSWP_PI);
     longt                     = z * cos(theta);
     latit                     = z * sin(theta);
     return SwpCoordinate2DMake(latit, longt);
 }
+
+
 
 
 

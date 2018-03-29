@@ -13,12 +13,11 @@
 		2DE2A9621E752EA900E5BD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9601E752EA900E5BD37 /* Main.storyboard */; };
 		2DE2A9641E752EA900E5BD37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9631E752EA900E5BD37 /* Assets.xcassets */; };
 		2DE2A9671E752EA900E5BD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2A9651E752EA900E5BD37 /* LaunchScreen.storyboard */; };
-		2DE2A9781E752EC900E5BD37 /* SwpCoordinateTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9711E752EC900E5BD37 /* SwpCoordinateTransform.m */; };
-		2DE2A9791E752EC900E5BD37 /* SwpGetSystemInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9731E752EC900E5BD37 /* SwpGetSystemInformation.m */; };
-		2DE2A97A1E752EC900E5BD37 /* SwpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2A9761E752EC900E5BD37 /* SwpTools.m */; };
+		5FC64A003B86C2DB3C62074D /* libPods-SwpToolsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 084DA729820B4E7897FFEC1A /* libPods-SwpToolsDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		084DA729820B4E7897FFEC1A /* libPods-SwpToolsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwpToolsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE2A9541E752EA900E5BD37 /* SwpToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE2A9581E752EA900E5BD37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DE2A95A1E752EA900E5BD37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,14 +28,8 @@
 		2DE2A9631E752EA900E5BD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DE2A9661E752EA900E5BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DE2A9681E752EA900E5BD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DE2A9701E752EC900E5BD37 /* SwpCoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoordinateTransform.h; sourceTree = "<group>"; };
-		2DE2A9711E752EC900E5BD37 /* SwpCoordinateTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCoordinateTransform.m; sourceTree = "<group>"; };
-		2DE2A9721E752EC900E5BD37 /* SwpGetSystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpGetSystemInformation.h; sourceTree = "<group>"; };
-		2DE2A9731E752EC900E5BD37 /* SwpGetSystemInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpGetSystemInformation.m; sourceTree = "<group>"; };
-		2DE2A9741E752EC900E5BD37 /* SwpLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpLog.h; sourceTree = "<group>"; };
-		2DE2A9751E752EC900E5BD37 /* SwpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpTools.h; sourceTree = "<group>"; };
-		2DE2A9761E752EC900E5BD37 /* SwpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpTools.m; sourceTree = "<group>"; };
-		2DE2A9771E752EC900E5BD37 /* SwpWeakifyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpWeakifyHeader.h; sourceTree = "<group>"; };
+		8E5B22FA44AF489103600E92 /* Pods-SwpToolsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwpToolsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwpToolsDemo/Pods-SwpToolsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A54AFA2420B0C483B80716F6 /* Pods-SwpToolsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwpToolsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwpToolsDemo/Pods-SwpToolsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC64A003B86C2DB3C62074D /* libPods-SwpToolsDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092720DD371A47BB41D81F07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084DA729820B4E7897FFEC1A /* libPods-SwpToolsDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DE2A94B1E752EA900E5BD37 = {
 			isa = PBXGroup;
 			children = (
 				2DE2A9561E752EA900E5BD37 /* SwpToolsDemo */,
 				2DE2A9551E752EA900E5BD37 /* Products */,
+				D4E1DDBE73034ADF240716C5 /* Pods */,
+				092720DD371A47BB41D81F07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +73,6 @@
 		2DE2A9561E752EA900E5BD37 /* SwpToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2DE2A96E1E752EC900E5BD37 /* SwpTools */,
 				2DE2A95A1E752EA900E5BD37 /* AppDelegate.h */,
 				2DE2A95B1E752EA900E5BD37 /* AppDelegate.m */,
 				2DE2A95D1E752EA900E5BD37 /* ViewController.h */,
@@ -91,28 +94,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2DE2A96E1E752EC900E5BD37 /* SwpTools */ = {
+		D4E1DDBE73034ADF240716C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2DE2A96F1E752EC900E5BD37 /* SwpTools */,
+				8E5B22FA44AF489103600E92 /* Pods-SwpToolsDemo.debug.xcconfig */,
+				A54AFA2420B0C483B80716F6 /* Pods-SwpToolsDemo.release.xcconfig */,
 			);
-			name = SwpTools;
-			path = ../../SwpTools;
-			sourceTree = "<group>";
-		};
-		2DE2A96F1E752EC900E5BD37 /* SwpTools */ = {
-			isa = PBXGroup;
-			children = (
-				2DE2A9701E752EC900E5BD37 /* SwpCoordinateTransform.h */,
-				2DE2A9711E752EC900E5BD37 /* SwpCoordinateTransform.m */,
-				2DE2A9721E752EC900E5BD37 /* SwpGetSystemInformation.h */,
-				2DE2A9731E752EC900E5BD37 /* SwpGetSystemInformation.m */,
-				2DE2A9741E752EC900E5BD37 /* SwpLog.h */,
-				2DE2A9751E752EC900E5BD37 /* SwpTools.h */,
-				2DE2A9761E752EC900E5BD37 /* SwpTools.m */,
-				2DE2A9771E752EC900E5BD37 /* SwpWeakifyHeader.h */,
-			);
-			path = SwpTools;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DE2A96B1E752EA900E5BD37 /* Build configuration list for PBXNativeTarget "SwpToolsDemo" */;
 			buildPhases = (
+				1DB918217187C609DA99D2A8 /* [CP] Check Pods Manifest.lock */,
 				2DE2A9501E752EA900E5BD37 /* Sources */,
 				2DE2A9511E752EA900E5BD37 /* Frameworks */,
 				2DE2A9521E752EA900E5BD37 /* Resources */,
@@ -146,6 +135,7 @@
 				TargetAttributes = {
 					2DE2A9531E752EA900E5BD37 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X4Q3F8862T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -181,17 +171,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DB918217187C609DA99D2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwpToolsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2DE2A9501E752EA900E5BD37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE2A97A1E752EC900E5BD37 /* SwpTools.m in Sources */,
 				2DE2A95F1E752EA900E5BD37 /* ViewController.m in Sources */,
-				2DE2A9781E752EC900E5BD37 /* SwpCoordinateTransform.m in Sources */,
 				2DE2A95C1E752EA900E5BD37 /* AppDelegate.m in Sources */,
 				2DE2A9591E752EA900E5BD37 /* main.m in Sources */,
-				2DE2A9791E752EC900E5BD37 /* SwpGetSystemInformation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +327,10 @@
 		};
 		2DE2A96C1E752EA900E5BD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5B22FA44AF489103600E92 /* Pods-SwpToolsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X4Q3F8862T;
 				INFOPLIST_FILE = SwpToolsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -332,9 +341,10 @@
 		};
 		2DE2A96D1E752EA900E5BD37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54AFA2420B0C483B80716F6 /* Pods-SwpToolsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X4Q3F8862T;
 				INFOPLIST_FILE = SwpToolsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
