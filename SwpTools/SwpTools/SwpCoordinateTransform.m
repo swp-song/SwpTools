@@ -8,9 +8,6 @@
 
 #import "SwpCoordinateTransform.h"
 
-
-#define swp_coordinate_inline __inline__ __attribute__((always_inline))
-
 @implementation SwpCoordinateTransform
 
 /**

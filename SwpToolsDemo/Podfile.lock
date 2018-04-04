@@ -1,5 +1,5 @@
 PODS:
-  - SwpTools (3.4.2)
+  - SwpTools (3.4.3)
 
 DEPENDENCIES:
   - SwpTools (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwpTools: acc882a2935fc7422c8af87655a45070b3739980
+  SwpTools: b6233c1827e52be01430bb061c4e5eb597e68f5d
 
 PODFILE CHECKSUM: a33faab4eec4bf396708c3bc4d3858d9591e2e8b
 

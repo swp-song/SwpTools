@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, SwpiPhoneScreenSize) {
  *
  *  @brief  swpGetIphoneIpAddress   ( 获取当前电话的 Ip 地址 )
  *
- *  @return NSString Ip
+ *  @return NSString Ip 
  */
 + (NSString *)swpGetIphoneIpAddress SWP_GET_SYSTEM_INFORMATION_DEPRECATED("废弃方法，请勿使用，坐标转换，方法迁移到 <https://github.com/swp-song/SwpDeviceIpUtils> 这里该类会在下几个版本移除，请及时更新");
 

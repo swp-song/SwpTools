@@ -1,6 +1,6 @@
 {
   "name": "SwpTools",
-  "version": "3.4.2",
+  "version": "3.4.3",
   "summary": "一些常用的工具方法",
   "homepage": "https://github.com/swp-song/SwpTools",
   "license": {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpTools.git",
-    "tag": "3.4.2"
+    "tag": "3.4.3"
   },
   "source_files": [
     "SwpTools",

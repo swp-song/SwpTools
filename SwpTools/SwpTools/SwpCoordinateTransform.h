@@ -42,7 +42,6 @@ typedef struct SwpCoordinate2D SwpCoordinate2D;
  */
 SwpCoordinate2D SwpCoordinate2DMake(SwpDegrees latitude, SwpDegrees longitude)  SWP_COORDINATE_TRANSFORM_DEPRECATED("废弃方法，请勿使用，坐标转换，方法迁移到 <https://github.com/swp-song/SwpCoordinatesUtils> 这里该类会在下几个版本移除，请及时更新");;
 
-
 /**
  *  @author swp_song
  *

@@ -479,7 +479,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return BOOL                     写入 成功 返回 YES 写入失败 返回 NO
  */
-+ (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用");
++ (BOOL)swpToolDataWriteToPlist:(NSDictionary*)writeData plistName:(nullable NSString *)plistName SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用，即将以移除该方法");
 
 /**
  *  @author swp_song
@@ -490,7 +490,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return NSDictionary                    返回 取出的数据 字典
  */
-+ (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用");
++ (NSDictionary *)swpToolGetDictionaryFromPlist:(nullable NSString *)plistName SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用，即将以移除该方法");
 
 /**
  *  @author swp_song
@@ -501,7 +501,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return NSString                ( url )
  */
-+ (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用");
++ (NSString *)swpToolGetInterfaceURL:(nullable NSString *)key SWP_TOOLS_DEPRECATED("废弃方法, 请勿使用，即将以移除该方法");
 
 
 @end
