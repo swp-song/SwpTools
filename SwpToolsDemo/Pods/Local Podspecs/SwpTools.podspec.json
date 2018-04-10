@@ -1,26 +1,24 @@
 {
   "name": "SwpTools",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "summary": "一些常用的工具方法",
+  "description": "TODO: 一些常用的工具方法",
   "homepage": "https://github.com/swp-song/SwpTools",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    " swp_song": "396587868@qq.com"
+    "swp-song": "396587868@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/swp-song/SwpTools.git",
+    "tag": "3.4.4"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source": {
-    "git": "https://github.com/swp-song/SwpTools.git",
-    "tag": "3.4.3"
-  },
-  "source_files": [
-    "SwpTools",
-    "SwpTools/**/*.{h,m}"
-  ],
+  "source_files": "SwpTools/**/*.{h,m}",
   "frameworks": [
     "UIKit",
     "Foundation"
